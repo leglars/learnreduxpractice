@@ -1,7 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+
+
 import App from './components/App';
-import './styles/index.css';
+
+
+import './statics/styles/skeleton.css';
 
 ReactDOM.render(
   <App />,
