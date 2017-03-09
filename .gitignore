@@ -4,3 +4,4 @@ README.md
 node_modules/
 npm-debug.log
 src/statics/styles/*.css
+src/statics/styles/*.map
