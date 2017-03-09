@@ -7,14 +7,12 @@ import Main from './Main';
 //import src
 
 
-
-
-const App = React.createClass ({
-  render: function() {
-    return (
-      <Main/>
-    );
-  }
+const App = React.createClass({
+    render: function () {
+        return (
+            <Main/>
+        );
+    }
 });
 
 export default App;
