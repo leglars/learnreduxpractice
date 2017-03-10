@@ -1,0 +1,16 @@
+.projectsdisplay-wrap {
+  padding: 32px 0 60px 0;
+  margin: 0 auto;
+  width: auto;
+  text-align: center;
+}
+
+.projectsdisplay-wrap img {
+  width: 20% - 5%;
+  height: 420px;
+  background-color: #4a4a4a;
+  margin-left: 40px;
+  &:first-child {
+    margin-left: 0;
+  }
+}

@@ -34,10 +34,9 @@
 
 .social-media li.icon {
   color: #636363;
-}
-
-.social-media li.icon:hover {
-  color: $primary-color;
+  &:hover {
+    color: $primary-color;
+  }
 }
 
 

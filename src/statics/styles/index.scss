@@ -1,0 +1,33 @@
+.index-wrap {
+  padding: 24px 0;
+}
+
+.nav {
+  text-align: center;
+}
+
+.nav ul {
+
+}
+
+.nav li {
+  display: inline-block;
+}
+
+.nav ul a {
+  text-decoration: none;
+  color: #4a4a4a;
+  font-size: 24px;
+  padding-bottom: 4px;
+  &:hover {
+    border-bottom: solid 4px #969696;
+  }
+}
+
+.nav .active {
+  border-bottom: solid 4px #969696;
+}
+
+.nav ul li:nth-child(2) {
+  width: 32px;
+}

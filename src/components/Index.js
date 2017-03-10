@@ -3,10 +3,25 @@
  */
 import React from 'react';
 
+import ProjectsDisplay from './ProjectsDisplay'
+
+import '../statics/styles/index.css';
+
 const Index = React.createClass({
     render: function() {
         return(
-            <p>this is a index</p>
+            <div className="container">
+                <div className="index-wrap">
+                    <div className="nav">
+                        <ul>
+                            <a href="#" className="active"><li>Projects</li></a>
+                            <li></li>
+                            <a href="#"><li>Concepts</li></a>
+                        </ul>
+                    </div>
+                    <ProjectsDisplay/>
+                </div>
+            </div>
         )
     }
 });
