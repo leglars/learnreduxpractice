@@ -1,17 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router, Route, IndexRoute, hashHistory } from 'react-router';
-
+import { HashRouter as Router, Route } from 'react-router-dom';
 
 import App from './components/App';
 
-
 import './statics/styles/skeleton.css';
 
-ReactDOM.render(
-    <Router history={hashHistory}>
-        <Route path="/" component={App}>
-        </Route>
-    </Router>,
-  document.getElementById('root')
+ReactDOM.render((
+    <Router>
+        <div>
+            <Route path="/" component={App}/>
+        </div>
+    </Router>
+    ), document.getElementById('root')
 );

@@ -2,7 +2,7 @@
  * Created by leglars on 2017/3/10.
  */
 import React from 'react';
-import { Link } from 'react-router';
+import { Link, Route } from 'react-router-dom';
 
 
 import Index from './Index';
@@ -24,7 +24,8 @@ const Main = React.createClass({
                 </div>
                 {/*this is the clone element which can be change base on content*/}
                 <Index/>
-                <Footer/>
+
+                <Route strict path="/" component={Footer} />
             </div>
         )
     }

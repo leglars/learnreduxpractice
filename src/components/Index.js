@@ -2,8 +2,10 @@
  * Created by leglars on 2017/3/10.
  */
 import React from 'react';
+import { NavLink, Route, Switch } from 'react-router-dom';
 
-import ProjectsDisplay from './ProjectsDisplay'
+import ProjectsDisplay from './ProjectsDisplay';
+import ConceptsDisplay from './ConceptsDisplay';
 
 import '../statics/styles/index.css';
 
@@ -14,12 +16,15 @@ const Index = React.createClass({
                 <div className="index-wrap">
                     <div className="nav">
                         <ul>
-                            <a href="#" className="active"><li>Projects</li></a>
+                            <NavLink to="/project" activeClassName="active"><li>Projects</li></NavLink>
                             <li></li>
-                            <a href="#"><li>Concepts</li></a>
+                            <NavLink to="/concept" activeClassName="active"><li>Concepts</li></NavLink>
                         </ul>
                     </div>
-                    <ProjectsDisplay/>
+                    <Switch>
+                        <Route component={ProjectsDisplay}/>
+                        <Route exact path="/concept" component={ConceptsDisplay} />
+                    </Switch>
                 </div>
             </div>
         )
