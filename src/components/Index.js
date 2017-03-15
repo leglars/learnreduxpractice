@@ -9,7 +9,11 @@ import ConceptsDisplay from './ConceptsDisplay';
 
 import '../statics/styles/index.css';
 
+
+
+
 const Index = React.createClass({
+
     render: function() {
         return(
             <div className="container">
@@ -22,7 +26,9 @@ const Index = React.createClass({
                         </ul>
                     </div>
                     <Switch>
-                        <Route component={ProjectsDisplay}/>
+                        <Route path="/project" render={
+                            <ProjectsDisplay/>
+                        }/>
                         <Route exact path="/concept" component={ConceptsDisplay} />
                     </Switch>
                 </div>
