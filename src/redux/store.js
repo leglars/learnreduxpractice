@@ -1,33 +1,26 @@
-/**
- * Created by leglars on 2017/3/15.
- */
-import { createStore, applyMiddleware, compose } from 'redux';
-// import { routerMiddleware } from 'react-router-redux';
-import createHashHistory from 'history/createHashHistory';
+import { createStore, applyMiddleware } from 'redux';
+import createHistory from 'history/createBrowserHistory';
+import { routerMiddleware } from 'react-router-redux'
 
-import { connectRouter, routerMiddleware } from 'connected-react-router';
-
-import reducer from './reducers/index';
+import reducers from './reducers/index';
 
 import projects from '../data/projects';
 
 
-const defaultState = {
-    projects
+export const history = createHistory();
+const middleware = routerMiddleware(history);
+
+const initalData = {
+    data: {
+        projects
+    }
 };
 
-export const history = createHashHistory();
-// const middleware = routerMiddleware(history);
 
-
-const store = createStore(
-        connectRouter(history)(reducer),
-        compose(
-            applyMiddleware(
-                routerMiddleware(history)
-            )
-        )
-    );
-
+let store = createStore(
+    reducers,
+    initalData,
+    applyMiddleware(middleware)
+);
 
 export default store;

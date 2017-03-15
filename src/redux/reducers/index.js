@@ -1,14 +1,12 @@
-/**
- * Created by leglars on 2017/3/15.
- */
 import { combineReducers } from 'redux';
-// import { routerReducer} from 'react-router-redux';
+import { routerReducer } from 'react-router-redux';
 
-import pages from './pages';
+import data from './data';
 
-const reducer = combineReducers({
-    pages,
-    // routing: routerReducer
+
+const reducers = combineReducers({
+    data,
+    router: routerReducer
 });
 
-export default reducer;
+export default reducers

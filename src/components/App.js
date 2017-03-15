@@ -10,10 +10,8 @@ import Main from './Main';
 //import src
 
 function mapStateToProps(state) {
-    console.log(state);
     return {
-        pages: state.pages,
-        router: state.router
+        data: state.data
     }
 }
 

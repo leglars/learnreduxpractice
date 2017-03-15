@@ -2,7 +2,8 @@
  * Created by leglars on 2017/3/10.
  */
 import React from 'react';
-import { NavLink, Route, Switch } from 'react-router-dom';
+import { Route, Switch } from 'react-router';
+import { NavLink } from 'react-router-dom';
 
 import ProjectsDisplay from './ProjectsDisplay';
 import ConceptsDisplay from './ConceptsDisplay';
@@ -26,11 +27,10 @@ const Index = React.createClass({
                         </ul>
                     </div>
                     <Switch>
-                        <Route path="/project" render={
-                            <ProjectsDisplay/>
-                        }/>
+                        <Route path="/project" component={ProjectsDisplay} />
                         <Route exact path="/concept" component={ConceptsDisplay} />
                     </Switch>
+
                 </div>
             </div>
         )
