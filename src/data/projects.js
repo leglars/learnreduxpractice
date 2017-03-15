@@ -2,10 +2,11 @@
  * Created by leglars on 2017/3/14.
  */
 
-const projects = {
-    we: {
+const projects = [
+    {
         projectId: "1",
-        project: "Whisper Effect",
+        projectURL: "whisper-effect",
+        title: "Whisper Effect",
         subtitle: "Use your body to listen in the world",
         titleImage: [
             {
@@ -17,7 +18,7 @@ const projects = {
             {
                 sectionTitle: "introduction",
                 subtitle: "",
-                content: "In this project, we apply bone conduction technology to change the way of listening and embed this innovative experience into a folktale - Don’t tell your secret to a tree hole. To deliver an intuitive experience, we consider the relationship between materials, metaphors, and behaviors",
+                content: "In this title, we apply bone conduction technology to change the way of listening and embed this innovative experience into a folktale - Don’t tell your secret to a tree hole. To deliver an intuitive experience, we consider the relationship between materials, metaphors, and behaviors",
             },
             {
                 sectionTitle: "inspire",
@@ -28,9 +29,10 @@ const projects = {
         ]
     },
 
-    toy: {
+    {
         projectId: "2",
-        project: "Thinking of You",
+        title: "Thinking of You",
+        projectURL: "thinking-of-you",
         subtitle: "Use your body to listen in the world",
         titleImage: [
             {
@@ -42,7 +44,7 @@ const projects = {
             {
                 sectionTitle: "introduction",
                 subtitle: "",
-                content: "In this project, we apply bone conduction technology to change the way of listening and embed this innovative experience into a folktale - Don’t tell your secret to a tree hole. To deliver an intuitive experience, we consider the relationship between materials, metaphors, and behaviors",
+                content: "In this title, we apply bone conduction technology to change the way of listening and embed this innovative experience into a folktale - Don’t tell your secret to a tree hole. To deliver an intuitive experience, we consider the relationship between materials, metaphors, and behaviors",
             },
             {
                 sectionTitle: "inspire",
@@ -52,9 +54,10 @@ const projects = {
 
         ]
     },
-    itn: {
+    {
         projectId: "3",
-        project: "In The Know",
+        title: "In The Know",
+        projectURL: "in-the-know",
         subtitle: "Use your body to listen in the world",
         titleImage: [
             {
@@ -66,7 +69,7 @@ const projects = {
             {
                 sectionTitle: "introduction",
                 subtitle: "",
-                content: "In this project, we apply bone conduction technology to change the way of listening and embed this innovative experience into a folktale - Don’t tell your secret to a tree hole. To deliver an intuitive experience, we consider the relationship between materials, metaphors, and behaviors",
+                content: "In this title, we apply bone conduction technology to change the way of listening and embed this innovative experience into a folktale - Don’t tell your secret to a tree hole. To deliver an intuitive experience, we consider the relationship between materials, metaphors, and behaviors",
             },
             {
                 sectionTitle: "inspire",
@@ -76,9 +79,10 @@ const projects = {
 
         ]
     },
-    ct: {
+    {
         projectId: "4",
-        project: "City Talk",
+        title: "City Talk",
+        projectURL: "city-talk",
         subtitle: "Use your body to listen in the world",
         titleImage: [
             {
@@ -90,7 +94,7 @@ const projects = {
             {
                 sectionTitle: "introduction",
                 subtitle: "",
-                content: "In this project, we apply bone conduction technology to change the way of listening and embed this innovative experience into a folktale - Don’t tell your secret to a tree hole. To deliver an intuitive experience, we consider the relationship between materials, metaphors, and behaviors",
+                content: "In this title, we apply bone conduction technology to change the way of listening and embed this innovative experience into a folktale - Don’t tell your secret to a tree hole. To deliver an intuitive experience, we consider the relationship between materials, metaphors, and behaviors",
             },
             {
                 sectionTitle: "inspire",
@@ -100,9 +104,10 @@ const projects = {
 
         ]
     },
-    live: {
+    {
         projectId: "5",
-        project: "Live",
+        title: "Live",
+        projectURL: "live",
         subtitle: "Use your body to listen in the world",
         titleImage: [
             {
@@ -114,7 +119,7 @@ const projects = {
             {
                 sectionTitle: "introduction",
                 subtitle: "",
-                content: "In this project, we apply bone conduction technology to change the way of listening and embed this innovative experience into a folktale - Don’t tell your secret to a tree hole. To deliver an intuitive experience, we consider the relationship between materials, metaphors, and behaviors",
+                content: "In this title, we apply bone conduction technology to change the way of listening and embed this innovative experience into a folktale - Don’t tell your secret to a tree hole. To deliver an intuitive experience, we consider the relationship between materials, metaphors, and behaviors",
             },
             {
                 sectionTitle: "inspire",
@@ -124,6 +129,6 @@ const projects = {
 
         ]
     },
-};
+];
 
 export default projects;

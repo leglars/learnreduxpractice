@@ -2,11 +2,11 @@
  * Created by leglars on 2017/3/10.
  */
 import React from 'react';
-import { Link, Route } from 'react-router-dom';
+import { Link, Route, Switch } from 'react-router-dom';
 
 
 import Index from './Index';
-import Footer from './Footer';
+import ProjectPortfolio from './ProjectPortfolio';
 
 
 import logo from '../statics/images/logo@x2';
@@ -14,18 +14,40 @@ import '../statics/styles/main.css';
 
 
 const Main = React.createClass({
+
+    isLocatedInIndex: function() {
+        return (this.props.location.pathname.length > 12)
+    },
+
     render: function() {
         return(
             <div className="wrap">
+                { (this.isLocatedInIndex()) ?
+                    <div>
+                        <Link to="/projects">back</Link>
+                    </div>
+                    : <div></div> }
                 <div className="logo-wrap">
                     <Link to="/">
                         <img src={logo} alt="logo" className="logo"/>
                     </Link>
                 </div>
-                {/*this is the clone element which can be change base on content*/}
-                <Index/>
 
-                <Route strict path="/" component={Footer} />
+                <Switch>
+                    <Route exact path="/" render={()=>
+                        <Index {...this.props}/>
+                    }/>
+                    <Route exact path="/:class" render={()=>
+                        <Index {...this.props}/>
+                    }/>
+                    <Route
+                        Path="/:class/:projectURL/page/:page"
+                        render={() =>
+                            <ProjectPortfolio {...this.props}/>
+                        }/>
+                </Switch>
+
+
             </div>
         )
     }

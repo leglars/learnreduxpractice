@@ -5,12 +5,13 @@
   text-align: center;
 }
 
-.projectsdisplay-wrap img {
+.projectsdisplay-wrap a img {
   width: 20% - 5%;
   height: 420px;
   background-color: #4a4a4a;
   margin-left: 40px;
-  &:first-child {
-    margin-left: 0;
-  }
+}
+
+.projectsdisplay-wrap a:first-child img {
+  margin-left: 0;
 }
