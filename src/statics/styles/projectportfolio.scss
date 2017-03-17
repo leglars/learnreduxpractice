@@ -1,0 +1,53 @@
+#pfooter {
+  position: relative;
+  width: auto;
+  margin-top: 56px - 24px;
+  height: 24px;
+  background-color: #F5F5F5;
+  overflow: hidden;
+  transition: all 200ms linear;
+
+  &:hover{
+    margin-top: 0;
+    height: 56px;
+    transition: all 200ms linear;
+  }
+}
+
+#pfooter .social-media {
+  position: absolute;
+  right: 50%;
+  margin-right: -76px;
+  bottom: 26px;
+  line-height: 20px;
+  padding-top: 0;
+  text-align: center;
+}
+
+#pfooter .social-media ul {
+  height: 20px;
+}
+
+#pfooter .social-media ul li{
+  color: #636363;
+  margin-bottom: 0;
+}
+
+#pfooter .social-media ul a:first-child li {
+  margin-left: 0;
+}
+
+
+
+
+.copyright {
+
+  font-size: 14px;
+  color: #A3A3A3;
+  line-height: 14px;
+
+  position: absolute;
+  right: 50%;
+  margin-right: -113px;
+  bottom: 4px;
+}

@@ -2,7 +2,7 @@
  * Created by leglars on 2017/3/11.
  */
 import React from 'react';
-import { Link, Route } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import '../statics/styles/projectsdisplay.css'
 import placeholder from '../statics/images/placeholder.jpg'
