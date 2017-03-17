@@ -1,0 +1,48 @@
+#image-view {
+  position: fixed;
+  z-index: 99;
+  width: 1440px;
+  height: 1200px;
+}
+
+#image-view-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #1F1C26;
+  opacity: 0.43;
+  height: 900px;
+  width: 1440px;
+  z-index: 100;
+}
+
+#image-frame-wrap {
+  position: absolute;
+  right: 50%;
+  background-color: #FFFFFF;
+  margin-top: 96px;
+  z-index: 120;
+  padding-bottom: 24px;
+}
+
+#image-view img {
+  padding: 36px;
+  position: relative;
+  height: 560px;
+  width: auto;
+}
+
+#image-view .captain {
+  height: auto;
+  padding: 0 64px;
+  word-wrap: break-word;
+  background-color: #ffffff;
+  z-index: 120;
+
+  /* Fusce vehicula dolor: */
+  font-style: italic;
+  font-weight: 400;
+  font-size: 18px;
+  color: #4A4A4A;
+  line-height: 28px;
+}

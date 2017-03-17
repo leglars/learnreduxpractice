@@ -7,6 +7,7 @@ import { Link, Route, Switch } from 'react-router-dom';
 
 import Index from './Index';
 import ProjectPortfolio from './ProjectPortfolio';
+import ImageView from './ImageView';
 
 
 import logo from '../statics/images/logo@x2';
@@ -21,7 +22,9 @@ const Main = React.createClass({
 
     render: function() {
         return(
+
             <div className="wrap">
+                <ImageView/>
                 { (this.isLocatedInIndex()) ?
                     <div>
                         <Link to="/projects">back</Link>
@@ -46,6 +49,7 @@ const Main = React.createClass({
                             <ProjectPortfolio {...this.props}/>
                         }/>
                 </Switch>
+
 
 
             </div>

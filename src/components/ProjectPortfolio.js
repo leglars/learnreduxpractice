@@ -4,14 +4,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import classnames from 'classnames';
-
 import FaLinkedinSquare from 'react-icons/lib/fa/linkedin-square';
 import FaGithub from 'react-icons/lib/fa/github';
 import MdEmail from 'react-icons/lib/md/email';
 import FaFlickr from 'react-icons/lib/fa/flickr';
 
 import PageCounter from './PageCounter';
+
 
 import '../statics/styles/projectportfolio.css';
 
