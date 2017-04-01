@@ -1,0 +1,106 @@
+#we .titleHero>.hero{
+  display: inline-block;
+  &:nth-child(2) {
+    margin-left: 10px;
+  }
+}
+
+#we .titleHero>.hero>img {
+  height: 300px;
+}
+
+#we .titleHero {
+  height: 300px;
+}
+
+#we{
+  position: relative;
+}
+
+#we .title {
+  /* Whisper Effect: */
+  font-size: 72px;
+  font-weight: 600;
+  font-style: italic;
+  color: #FFFFFF;
+  line-height: 72px;
+
+  position: relative;
+  bottom: 4.5px;
+}
+
+#we .subTitle {
+  /* Use your body to lis: */
+  font-size: 24px;
+  font-weight: 600;
+  font-style: italic;
+  color: #888888;
+  line-height: 26px;
+  position: relative;
+  left: 24px;
+}
+
+#we .titleBackground {
+  float: left;
+  padding: 14px 120px 0 24px;
+  background-color: #757575;
+}
+
+#we .whiteFrame {
+  position: absolute;
+
+  display: table;
+  left: 48px - 16px;
+  top: 300px - 64px;
+  padding: 16px;
+
+  background-color: #FFFFFF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$column-gap: 40px !default;
+
+#we .halfPage {
+  width: 50%;
+}
+
+#we .content {
+  font-size: 14.83px;
+  font-weight: 200;
+  /* space within a publi: */
+  color: #3D3D3D;
+  line-height: 24px;
+
+  display: table;
+  margin-top: 14px + 16px + 26px + 72px - 64px;
+}
+
+#we .columnRight {
+  float: right;
+  padding-left: $column-gap / 2;
+}
+
+#we .two {
+  column-count: 2;
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+}
+
+#we .container {
+  column-gap: $column-gap;
+  -webkit-column-gap: $column-gap;
+  -moz-column-gap: $column-gap;
+
+}

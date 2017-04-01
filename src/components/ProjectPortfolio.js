@@ -3,16 +3,22 @@
  */
 import React from 'react';
 import { Link } from 'react-router-dom';
+import DOMPurify from 'dompurify';
 
 import FaLinkedinSquare from 'react-icons/lib/fa/linkedin-square';
 import FaGithub from 'react-icons/lib/fa/github';
 import MdEmail from 'react-icons/lib/md/email';
 import FaFlickr from 'react-icons/lib/fa/flickr';
 
-import PageCounter from './PageCounter';
+import MdChevronLeft from 'react-icons/lib/md/chevron-left';
+import MdChevronRight from 'react-icons/lib/md/chevron-right';
+
+
 
 
 import '../statics/styles/projectportfolio.css';
+import '../statics/styles/page.css';
+
 
 const ProjectPortfolio = React.createClass({
 
@@ -21,6 +27,20 @@ const ProjectPortfolio = React.createClass({
     },
     isPreviousPage: function(currentPage) {
         return (currentPage > 1)
+    },
+
+    updateDimensions: function() {
+        const height = window.innerHeight - (81 + 64 + 36 + 44 + 36 + 24);
+        this.setState({height: height});
+    },
+    componentWillMount: function() {
+        this.updateDimensions();
+    },
+    componentDidMount: function() {
+        window.addEventListener("resize", this.updateDimensions);
+    },
+    componentWillUnmount: function() {
+        window.removeEventListener("resize", this.updateDimensions);
     },
 
 
@@ -50,31 +70,91 @@ const ProjectPortfolio = React.createClass({
         const isNext = this.isNextPage(currentPage, totalPages);
         const isPrevious = this.isPreviousPage(currentPage);
 
+        const style = {
+            minHeight: this.state.height,
+        };
+
+
+
         return (
             <div>
-                <div>
-                    <p>{page.sectionTitle}</p>
-                    <p>{page.subTitle}</p>
-                    <p>{page.content}</p>
+            <div id="portfolio">
+
+                <div id="pageCounter">
                     <PageCounter currentPage={currentPage} totalPages={totalPages} />
-                    <div>
-                        {
-                            isPrevious
-                                ? <Link to={previousPagePath}>{content[currentPage - 2].sectionTitle || null}</Link>
-                                : <div></div>
-                        }
-                        {
-                            isNext
-                                ? <Link to={nextPagePath}>{content[currentPage].sectionTitle || null}</Link>
-                                : <div></div>
-                        }
-                    </div>
                 </div>
-                <Footer />
+
+                <div id="portfolioContainer">
+
+                    <DemoPage style={style} content={page.content}/>
+
+
+                    <PageButton previous={previousPagePath}
+                                next={nextPagePath}
+                                content={content}
+                                isPrevious={isPrevious}
+                                isNext={isNext}
+                                currentPage={currentPage}/>
+                </div>
+
             </div>
+            <Footer />
+                </div>
         )
     }
 });
+
+const DemoPage = ({style, content}) => (
+    <div id="theOnlyEnterPoint" style={style}
+         dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(content)}}></div>
+);
+
+const PageButton = ({ previous, next, content, isPrevious, isNext, currentPage}) => (
+    <div className="pageChange clear">
+        {
+            isPrevious
+                ? <Previous path={previous}
+                            content={content[currentPage - 2].sectionTitle || null} />
+                : <div></div>
+        }
+        {
+            isNext
+                ? <Next path={next}
+                        content={content[currentPage].sectionTitle || null} />
+                : <div></div>
+        }
+    </div>
+);
+
+
+const PageCounter = ({currentPage, totalPages}) => (
+    <div className="pageCounter">
+        {currentPage} / {totalPages}
+    </div>
+);
+
+
+const Previous = ({ path, content }) => (
+    <div className="pageUp">
+        <Link to={path}>
+            <div className="bottomChevron">
+                <MdChevronLeft size={38} />
+            </div>
+            <div className="linkText">{content}</div>
+        </Link>
+    </div>
+);
+
+const Next = ({ path, content }) => (
+    <div className="pageDown">
+        <Link to={path} >
+            <div className="linkText">{content}</div>
+            <div className="bottomChevron">
+                <MdChevronRight size={38} />
+            </div>
+        </Link>
+    </div>
+);
 
 
 const Footer = React.createClass({

@@ -2,6 +2,8 @@
   padding: 16px 0 12px 0;
   border-bottom: solid 1px #979797;
   text-align: center;
+  z-index: 1;
+  position: relative;
 }
 
 .logo {
@@ -13,3 +15,20 @@
   //margin: auto;
 }
 
+.chevronBack {
+  z-index: 10;
+  position: relative;
+  float: left;
+  padding: 16px 26px 18px 26px;
+}
+
+.clear:before,
+.clear:after {
+  clear: both;
+  display: table;
+  content: '';
+}
+
+.relative {
+  position: relative;
+}
