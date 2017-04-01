@@ -12,6 +12,7 @@ import ImageView from './ImageView';
 
 import logo from '../statics/images/logo@x2';
 import '../statics/styles/main.css';
+import MdChevronLeft from "react-icons/lib/md/chevron-left";
 
 
 const Main = React.createClass({
@@ -21,15 +22,25 @@ const Main = React.createClass({
     },
 
     render: function() {
+
         return(
 
             <div className="wrap">
-                <ImageView/>
+
+                {/*ImageView do not use currently*/}
+
+                {/*<Route path="/:class/:projectURL/page/:page/:subtitle/:image"*/}
+                       {/*render={() =>*/}
+                            {/*<ImageView {...this.props} />*/}
+                       {/*} />*/}
+
+
                 { (this.isLocatedInIndex()) ?
-                    <div>
-                        <Link to="/projects">back</Link>
+                    <div className="chevronBack">
+                        <Link to="/projects"><MdChevronLeft size={48} /> </Link>
                     </div>
                     : <div></div> }
+
                 <div className="logo-wrap">
                     <Link to="/">
                         <img src={logo} alt="logo" className="logo"/>
@@ -37,14 +48,14 @@ const Main = React.createClass({
                 </div>
 
                 <Switch>
-                    <Route exact path="/" render={()=>
-                        <Index {...this.props}/>
-                    }/>
-                    <Route exact path="/:class" render={()=>
-                        <Index {...this.props}/>
-                    }/>
+                    <Route exact path="/" render={() =>
+                        <Index {...this.props} />} />
+                    <Route exact path="/:class"
+                           render={()=>
+                            <Index {...this.props}/>
+                            }/>
                     <Route
-                        Path="/:class/:projectURL/page/:page"
+                        Path="/:class/:project?/page/:number?"
                         render={() =>
                             <ProjectPortfolio {...this.props}/>
                         }/>
