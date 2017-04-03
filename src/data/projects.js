@@ -81,6 +81,7 @@ const projects = [
                 sectionTitle: "inspire",
                 subtitle: "Laurence - Everyday Whisper",
                 content: "Swift the daily idea can bring us into a brand-new world."
+
             }
 
         ]
