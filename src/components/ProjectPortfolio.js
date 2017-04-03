@@ -4,7 +4,8 @@
 import React from 'react';
 import DOMPurify from 'dompurify';
 
-import { Footer, FlipButtons, PageCounter } from './PageComponents';
+import { Footer, FlipButtons, PageCounter,
+         TitlePage, FourColumnsPage } from './PageComponents';
 
 import '../statics/styles/projectportfolio.css';
 import '../statics/styles/page.css';
@@ -47,8 +48,9 @@ const ProjectPortfolio = React.createClass({
         const index = data[catagory].findIndex(
             (project) => project.projectURL === projectURL
         );
-        const content = data[catagory][index].sections;
-        const page = content[currentPage - 1];
+        const content = data[catagory][index].sections;  // content = sections
+        const page = content[currentPage - 1];           // page = each of sections
+        const styleId = data[catagory][index].styleId;
 
         // page counter
         const totalPages = content.length;
@@ -67,7 +69,6 @@ const ProjectPortfolio = React.createClass({
         };
 
 
-
         return (
             <div>
                 <div id="portfolio">
@@ -77,8 +78,18 @@ const ProjectPortfolio = React.createClass({
                     </div>
 
                     <div id="portfolioContainer">
+                        <div className="theEnterPoint" style={style}>
+                            {
+                                page.is.titlePage
+                                    ? <TitlePage page={page} styleId={styleId} />
+                                    : page.is.columns
+                                        ? page.is.four
+                                            ? <FourColumnsPage page={page} styleId={styleId}/>
+                                            : <div className="two columns"></div>
+                                        : <DemoPage content={page.content}/>
+                            }
 
-                        <DemoPage style={style} content={page.content}/>
+                        </div>
 
                         <FlipButtons previous={previousPagePath}
                                      next={nextPagePath}
@@ -86,8 +97,8 @@ const ProjectPortfolio = React.createClass({
                                      isPrevious={isPrevious}
                                      isNext={isNext}
                                      currentPage={currentPage}/>
-                    </div>
 
+                    </div>
                 </div>
                 <Footer />
             </div>
@@ -96,7 +107,7 @@ const ProjectPortfolio = React.createClass({
 });
 
 const DemoPage = ({style, content}) => (
-    <div id="theOnlyEnterPoint" style={style}
+    <div id="theOnlyEnterPoint"
          dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(content)}}></div>
 );
 
