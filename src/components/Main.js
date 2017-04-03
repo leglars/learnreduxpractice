@@ -37,7 +37,7 @@ const Main = React.createClass({
 
                 { (this.isLocatedInIndex()) ?
                     <div className="chevronBack">
-                        <Link to="/projects"><MdChevronLeft size={48} /> </Link>
+                        <Link to="/project"><MdChevronLeft size={48} /> </Link>
                     </div>
                     : <div></div> }
 

@@ -1,5 +1,6 @@
 $content-color: #3D3D3D !default;
 $highlight-color: #1eaedb !default;
+$line-height: 24px !default;
 
 .reference {
   font-style: italic;
@@ -12,26 +13,26 @@ $highlight-color: #1eaedb !default;
 }
 
 
-.we .titleHero>.hero{
+.theEnterPoint .titleHero>.hero{
   display: inline-block;
   &:nth-child(2) {
     margin-left: 10px;
   }
 }
 
-.we .titleHero>.hero>img {
+.theEnterPoint .titleHero>.hero>img {
   height: 300px;
 }
 
-.we .titleHero {
+.theEnterPoint .titleHero {
   height: 300px;
 }
 
-.we{
+.we, .toy, .itk, .ct, .live, .tsdp, .memory, .wdc, .cc{
   position: relative;
 }
 
-.we .title {
+.theEnterPoint .title {
   /* Whisper Effect: */
   font-size: 72px;
   font-weight: 600;
@@ -43,7 +44,7 @@ $highlight-color: #1eaedb !default;
   bottom: 4.5px;
 }
 
-.we .subTitle {
+.theEnterPoint .subTitle {
   /* Use your body to lis: */
   font-size: 24px;
   font-weight: 600;
@@ -54,13 +55,13 @@ $highlight-color: #1eaedb !default;
   left: 24px;
 }
 
-.we .titleBackground {
+.theEnterPoint .titleBackground {
   float: left;
   padding: 14px 120px 0 24px;
   background-color: #757575;
 }
 
-.we .whiteFrame {
+.theEnterPoint .whiteFrame {
   position: absolute;
 
   display: table;
@@ -71,7 +72,7 @@ $highlight-color: #1eaedb !default;
   background-color: #FFFFFF;
 }
 
-.we .titleSpace {
+.theEnterPoint .titleSpace {
   margin-bottom: 36px;
 }
 
@@ -90,58 +91,65 @@ $highlight-color: #1eaedb !default;
 
 $column-gap: 40px !default;
 
-.we .halfPage {
+.theEnterPoint .halfPage {
   width: 50%;
 }
 
-.we .fullPage {
+.theEnterPoint .fullPage {
   width: 100%
 }
 
-.we .content {
+.theEnterPoint .content {
   font-size: 14.83px;
   font-weight: 200;
   /* space within a publi: */
   color: $content-color;
-  line-height: 24px;
+  line-height: $line-height;
 
   display: table;
   margin-top: 14px + 16px + 26px + 72px - 64px;
 }
 
-.we .columnRight {
+.theEnterPoint .paragraph {
+  margin-bottom: $line-height / 2;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.theEnterPoint .columnRight {
   float: right;
   padding-left: $column-gap / 2;
 }
 
-.we .two {
+.theEnterPoint .two {
   column-count: 2;
   -webkit-column-count: 2;
   -moz-column-count: 2;
 }
 
-.we .four {
+.theEnterPoint .four {
   column-count: 4;
   -webkit-column-count: 4;
   -moz-column-count: 4;
 }
 
-.we .container {
+.theEnterPoint .container {
   column-gap: $column-gap;
   -webkit-column-gap: $column-gap;
   -moz-column-gap: $column-gap;
 
 }
 
-.we .row  {
+.theEnterPoint .row  {
   width: 100%;
 }
 
-.we .row img{
+.theEnterPoint .row img{
   width: 100%;
 
 }
 
-.we .row .content {
+.theEnterPoint .row .content {
   margin-top: 24px;
 }
