@@ -30,13 +30,14 @@ const Index = React.createClass({
                             </ul>
                         </div>
                         <Switch>
-                            <Route path="/" render={() =>
+                            <Route exact path="/" render={() =>
                                 <ProjectsDisplay {...this.props}/>
                             }/>
-                            <Route strict path="/project" render={() =>
+                            <Route path="/project" render={() =>
                                 <ProjectsDisplay {...this.props}/>
                             }/>
-                            <Route exact path="/concept" component={ConceptsDisplay} />
+                            <Route path="/concept" render={() =>
+                                <ConceptsDisplay {...this.props}/>} />
                         </Switch>
 
                     </div>

@@ -13,7 +13,7 @@ import FaFlickr from 'react-icons/lib/fa/flickr';
 import MdChevronLeft from 'react-icons/lib/md/chevron-left';
 import MdChevronRight from 'react-icons/lib/md/chevron-right';
 
-
+import placeholder from '../statics/images/placeholder.jpg'
 
 
 import '../statics/styles/projectportfolio.css';
@@ -30,7 +30,7 @@ const ProjectPortfolio = React.createClass({
     },
 
     updateDimensions: function() {
-        const height = window.innerHeight - (81 + 64 + 36 + 44 + 36 + 24);
+        let height = window.innerHeight - (81 + 64 + 36 + 44 + 36 + 24);
         this.setState({height: height});
     },
     componentWillMount: function() {
@@ -87,7 +87,6 @@ const ProjectPortfolio = React.createClass({
                 <div id="portfolioContainer">
 
                     <DemoPage style={style} content={page.content}/>
-
 
                     <PageButton previous={previousPagePath}
                                 next={nextPagePath}
