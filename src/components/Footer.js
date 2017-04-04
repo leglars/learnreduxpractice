@@ -20,8 +20,8 @@ const Footer = React.createClass({
                         <div className="nine columns">
                             <p className="intro">
                                 Nicholas Zheng is a UX designer. He likes to explore the potential
-                                between people and technologies. He also works as a programmer.
-                                Using developing skill to realize idea makes him exciting.
+                                between people and technologies. He also works as a front-end developer.
+                                Using programming skill to realize idea makes him exciting.
                             </p>
                         </div>
                         <div className="three columns">

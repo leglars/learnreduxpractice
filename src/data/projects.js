@@ -148,7 +148,7 @@ const projects = [
             },
             {
                 sectionTitle: "Data Collection",
-                is: {},
+                is: {imageWithText: true},
                 subtitle: "",
                 content: [
                     "At the end of each phase, we hold a semi-structure interview with the participant to measure their social status and social satisfaction; besides, A daily dairy message sends to each contact to track participant’s social connections during the whole evaluation. By comparing with data of each phase, the difference helps to understand the impact of ToY. ",

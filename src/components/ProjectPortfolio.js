@@ -5,7 +5,7 @@ import React from 'react';
 import DOMPurify from 'dompurify';
 
 import { Footer, FlipButtons, PageCounter,
-         TitlePage, FourColumnsPage } from './PageComponents';
+         TitlePage, FourColumnsPage, ImageWithTextPage } from './PageComponents';
 
 import '../statics/styles/projectportfolio.css';
 import '../statics/styles/page.css';
@@ -86,7 +86,9 @@ const ProjectPortfolio = React.createClass({
                                         ? page.is.four
                                             ? <FourColumnsPage page={page} styleId={styleId}/>
                                             : <div className="two columns"></div>
-                                        : <DemoPage content={page.content}/>
+                                        : page.is.imageWithText
+                                            ? <ImageWithTextPage page={page} styleId={styleId}/>
+                                            : <DemoPage content={page.content}/>
                             }
 
                         </div>

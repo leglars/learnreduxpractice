@@ -19,4 +19,5 @@ exports.TitlePage = _TitlePage.default;
 const _FourColumnsPage = require("./FourColumnsPage");
 exports.FourColumnsPage = _FourColumnsPage.default;
 
-
+const _ImageWithTextPage = require("./ImageWithTextPage");
+exports.ImageWithTextPage = _ImageWithTextPage.default;
