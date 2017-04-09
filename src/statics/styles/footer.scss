@@ -2,9 +2,9 @@
 
 #footer {
   background-color: #d8d8d8;
-  height: 168px;
+  min-height: 190px;
   width: 100%;
-  padding: 24px 0;
+  padding: 24px 0 30px 0;
 }
 
 .intro {
@@ -20,6 +20,16 @@
 @media (#{$bp-larger-than-desktop}) {
   .intro {
     width: 620px;
+  }
+}
+
+#footer .eight.columns p {
+  display: block;
+  margin-bottom: 0;
+  &:after {
+    clear: both;
+    display: table;
+    content: " ";
   }
 }
 

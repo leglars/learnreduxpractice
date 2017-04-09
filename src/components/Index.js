@@ -2,12 +2,9 @@
  * Created by leglars on 2017/3/10.
  */
 import React from 'react';
-import { Route, Switch } from 'react-router';
-import { NavLink } from 'react-router-dom';
 
 import Footer from './Footer';
 import ProjectsDisplay from './ProjectsDisplay';
-import ConceptsDisplay from './ConceptsDisplay';
 
 
 import '../statics/styles/index.css';
@@ -17,11 +14,37 @@ import '../statics/styles/index.css';
 
 const Index = React.createClass({
 
+    updateDimensions: function() {
+        const width = window.innerWidth;
+        let height = 0;
+        if (width > 900) {
+            height = window.innerHeight - (81 + 190 + 48);
+            this.setState({height: height});
+        }
+    },
+    componentWillMount: function() {
+        this.updateDimensions();
+    },
+    componentDidMount: function() {
+        window.addEventListener("resize", this.updateDimensions);
+    },
+    componentWillUnmount: function() {
+        window.removeEventListener("resize", this.updateDimensions);
+    },
+
     render: function() {
+        let style;
+        if(this.state.height) {
+            style = {
+                minHeight: this.state.height,
+            }
+        }
+
+
         return(
             <div>
                 <div className="container">
-                    <div className="index-wrap">
+                    <div className="index-wrap" style={style}>
                         {/*<div className="nav">*/}
                             {/*<ul>*/}
                                 {/*<NavLink to="/project" activeClassName="active"><li>Projects</li></NavLink>*/}
