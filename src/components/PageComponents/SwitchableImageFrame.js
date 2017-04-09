@@ -41,12 +41,12 @@ const SwitchableImageFrame = React.createClass({
                     ))}
                 </Slider>
             </div>
-
         )
     }
 });
 
 SwitchableImageFrame.propTypes = {
+    settings: React.PropTypes.object,
     images: React.PropTypes.arrayOf(
         React.PropTypes.object
     ),
