@@ -17,6 +17,8 @@ const Index = React.createClass({
     updateDimensions: function() {
         const width = window.innerWidth;
         let height = 0;
+
+        // 900 is a temp number, it should connect with media query
         if (width > 900) {
             height = window.innerHeight - (81 + 190 + 48);
             this.setState({height: height});
