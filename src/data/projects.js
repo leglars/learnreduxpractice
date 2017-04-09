@@ -269,6 +269,58 @@ const projects = [
 
         ]
     },
+    {
+        projectId: "6",
+        title: "Web Design Collection",
+        projectURL: "wdc",
+        subtitle: "My web design works in last two years",
+        titleImage: [
+            {
+                alt: "",
+                src: "",
+            }
+        ],
+        sections: [
+            {
+                sectionTitle: "Introduction",
+                is: {titlePage: true,},
+                title: "Web Design Collection",
+                subtitle: "My web design works in last two years",
+                keyword: ["HTML5", "CSS3", "jQuery", "Polymer", "Js", "Sass"],
+                heroImages: [
+                    {
+                        src: 'https://github.com/leglars/portfolio/blob/master/src/statics/images/we/whisper_effect_title_hero_1.jpg?raw=true',
+                        alt: 'we exhibition',
+                        key: 1,
+                    },
+                    {
+                        src: 'https://github.com/leglars/portfolio/blob/master/src/statics/images/we/whisper_effect_title_hero_2.jpg?raw=true',
+                        alt: 'we exhibition',
+                        key: 2,
+                    }
+                ],
+                content: [""],
+
+            },
+            {
+                is: {scrollableImagePage: true},
+                sectionTitle: "Course Portfolio",
+                subtitle: "DECO7350",
+                images: [
+                    {
+                        src: "https://c1.staticflickr.com/3/2922/33094059534_433f24f496_k.jpg",
+                        alt: "Main page"
+                    },
+                    {
+                        src: "https://c1.staticflickr.com/3/2927/33896647006_7fe8fbdd99_c.jpg",
+                        alt: "About page & Skill list"
+                    }
+                ],
+                content: ["Swift the daily idea can bring us into a brand-new world."]
+            },
+
+        ]
+    },
 ];
 
 export default projects;

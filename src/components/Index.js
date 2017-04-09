@@ -18,7 +18,7 @@ const Index = React.createClass({
         const width = window.innerWidth;
         let height = 0;
 
-        // 900 is a temp number, it should connect with media query
+        // TODO: 900 is a temp number, it should connect with media query
         if (width > 900) {
             height = window.innerHeight - (81 + 190 + 48);
             this.setState({height: height});
@@ -47,6 +47,7 @@ const Index = React.createClass({
             <div>
                 <div className="container">
                     <div className="index-wrap" style={style}>
+                        {/*TODO: add a new filter*/}
                         {/*<div className="nav">*/}
                             {/*<ul>*/}
                                 {/*<NavLink to="/project" activeClassName="active"><li>Projects</li></NavLink>*/}
@@ -63,5 +64,4 @@ const Index = React.createClass({
         )
     }
 });
-
 export default Index;
