@@ -274,6 +274,7 @@ const projects = [
         title: "Web Design Collection",
         projectURL: "wdc",
         subtitle: "My web design works in last two years",
+        styleId: "wdc",
         titleImage: [
             {
                 alt: "",
@@ -315,6 +316,90 @@ const projects = [
                         src: "https://c1.staticflickr.com/3/2927/33896647006_7fe8fbdd99_c.jpg",
                         alt: "About page & Skill list"
                     }
+                ],
+                content: ["Swift the daily idea can bring us into a brand-new world."]
+            },
+            {
+                is: {scrollableImagePage: true},
+                sectionTitle: "Website Redesign",
+                subtitle: "DECO7120",
+                images: [
+                    {
+                        src: "https://c1.staticflickr.com/3/2807/33898126616_1e67575336_h.jpg",
+                        alt: "Index Page"
+                    },
+                    {
+                        src: "https://c1.staticflickr.com/3/2896/33554019690_4d7cbb8670_b.jpg",
+                        alt: "About"
+                    },
+                    {
+                        src: "https://c1.staticflickr.com/3/2932/33898118156_12af3a0a11_c.jpg",
+                        alt: "Project list"
+                    },
+                    {
+                        src: "https://c1.staticflickr.com/3/2842/33096079794_84fd3e0f8f_h.jpg",
+                        alt: "Project detail"
+                    },
+                    {
+                        src: "https://c1.staticflickr.com/3/2888/33554012860_5b38ffe25e_h.jpg",
+                        alt: "Article list"
+                    },
+                    {
+                        src: "https://c1.staticflickr.com/3/2833/33938896075_ade5a40a70_k.jpg",
+                        alt: "Article page"
+                    },
+                    {
+                        src: "https://c1.staticflickr.com/3/2851/33095582034_5ecd03d83c_c.jpg",
+                        alt: "contact"
+                    },
+                ],
+                content: ["Swift the daily idea can bring us into a brand-new world."]
+            },
+            {
+                is: {scrollableImagePage: true},
+                sectionTitle: "In The Know",
+                subtitle: "social mobile computing",
+                images: [
+                    {
+                        src: "https://c1.staticflickr.com/3/2842/33939752735_413aa02f6f_c.jpg",
+                        alt: "Entry point"
+                    },
+                    {
+                        src: "https://c1.staticflickr.com/4/3932/33554694910_ac8f327d30_c.jpg",
+                        alt: "Issue List"
+                    },
+                    {
+                        src: "https://c1.staticflickr.com/4/3935/33096447004_5a27799d37_c.jpg",
+                        alt: "News sources page [rank view]"
+                    },
+                    {
+                        src: "https://c1.staticflickr.com/3/2930/33782391932_6557ed6d09_h.jpg",
+                        alt: "News article"
+                    },
+                ],
+                content: ["Swift the daily idea can bring us into a brand-new world."]
+            },
+            {
+                is: {scrollableImagePage: true},
+                sectionTitle: "Truth Detective",
+                subtitle: "DECO7120",
+                images: [
+                    {
+                        src: "https://c1.staticflickr.com/3/2819/33554828000_d82a72a274_h.jpg",
+                        alt: "Entry point"
+                    },
+                    {
+                        src: "https://c1.staticflickr.com/3/2935/33126937583_91bcea56c8_c.jpg",
+                        alt: "Story Mode"
+                    },
+                    {
+                        src: "https://c1.staticflickr.com/3/2839/33096590514_baf90b98ca_c.jpg",
+                        alt: "Play Mode"
+                    },
+                    {
+                        src: "https://c1.staticflickr.com/3/2858/33126914923_786907d3ff_c.jpg",
+                        alt: "Confirmation page"
+                    },
                 ],
                 content: ["Swift the daily idea can bring us into a brand-new world."]
             },
