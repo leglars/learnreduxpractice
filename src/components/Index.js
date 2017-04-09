@@ -22,24 +22,15 @@ const Index = React.createClass({
             <div>
                 <div className="container">
                     <div className="index-wrap">
-                        <div className="nav">
-                            <ul>
-                                <NavLink to="/project" activeClassName="active"><li>Projects</li></NavLink>
-                                <li></li>
-                                <NavLink to="/concept" activeClassName="active"><li>Concepts</li></NavLink>
-                            </ul>
-                        </div>
-                        <Switch>
-                            <Route exact path="/" render={() =>
-                                <ProjectsDisplay {...this.props}/>
-                            }/>
-                            <Route path="/project" render={() =>
-                                <ProjectsDisplay {...this.props}/>
-                            }/>
-                            <Route path="/concept" render={() =>
-                                <ConceptsDisplay {...this.props}/>} />
-                        </Switch>
+                        {/*<div className="nav">*/}
+                            {/*<ul>*/}
+                                {/*<NavLink to="/project" activeClassName="active"><li>Projects</li></NavLink>*/}
+                                {/*<li></li>*/}
+                                {/*<NavLink to="/concept" activeClassName="active"><li>Concepts</li></NavLink>*/}
+                            {/*</ul>*/}
+                        {/*</div>*/}
 
+                        <ProjectsDisplay {...this.props}/>
                     </div>
                 </div>
                 <Footer/>
