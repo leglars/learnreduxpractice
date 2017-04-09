@@ -15,6 +15,7 @@ $line-height: 24px !default;
   }
 }
 
+// ***************   titlePage   **************** \\
 
 .theEnterPoint .titleHero>.hero{
   display: inline-block;
@@ -87,10 +88,7 @@ $line-height: 24px !default;
 
 
 
-
-
-
-
+// *****************    Columns Page   ***************** \\
 
 $column-gap: 40px !default;
 
@@ -158,3 +156,7 @@ $column-gap: 40px !default;
 }
 
 
+//  *******************   scrollableImagePage   ****************  \\
+//.scrollableImageFrame img {
+//  width: 100%;
+//}

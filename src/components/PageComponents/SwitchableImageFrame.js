@@ -15,10 +15,12 @@ const SwitchableImageFrame = React.createClass({
     render: function () {
         const { images, width, height } = this.props;
 
-        const style = {
+        const frameSize = {
             width: width,
-            height: height
+            height: height,
         };
+
+
 
         const settings = this.props.settings || {
                 dots: true,
@@ -30,13 +32,13 @@ const SwitchableImageFrame = React.createClass({
         };
 
         return (
-            <div style={style}>
+            <div style={frameSize}>
                 <Slider {...settings}>
                     {images.map((image, index) => (
                         <div key={index}>
                             <img src={image.src}
                                  alt={image.alt}
-                                 style={style}/>
+                                 />
                         </div>
                     ))}
                 </Slider>

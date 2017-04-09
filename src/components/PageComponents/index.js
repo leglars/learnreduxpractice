@@ -21,3 +21,6 @@ exports.FourColumnsPage = _FourColumnsPage.default;
 
 const _ImageWithTextPage = require("./ImageWithTextPage");
 exports.ImageWithTextPage = _ImageWithTextPage.default;
+
+const _ScrollableImagePage = require("./ScrollableImagePage");
+exports.ScrollableImagePage = _ScrollableImagePage.default;
