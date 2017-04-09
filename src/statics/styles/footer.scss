@@ -8,13 +8,19 @@
 }
 
 .intro {
-  width: 620px;
+  width: 500px;
   padding-top: 16px;
 
   font-size: 20px;
   color: #4a4a4a;
   font-weight: 400;
   line-height: 30px;
+}
+
+@media (#{$bp-larger-than-desktop}) {
+  .intro {
+    width: 620px;
+  }
 }
 
 .social-media {

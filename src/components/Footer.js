@@ -17,14 +17,14 @@ const Footer = React.createClass({
             <div id="footer" className="wrap">
                 <div className="container">
                     <div className="row">
-                        <div className="nine columns">
+                        <div className="eight columns">
                             <p className="intro">
                                 Nicholas Zheng is a UX designer. He likes to explore the potential
                                 between people and technologies. He also works as a front-end developer.
                                 Using programming skill to realize idea makes him exciting.
                             </p>
                         </div>
-                        <div className="three columns">
+                        <div className="four columns">
                             <div className="social-media">
                                 <ul>
                                     <a href="#"><li className="icon"><FaLinkedinSquare size={32} /></li></a>
