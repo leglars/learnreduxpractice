@@ -5,45 +5,46 @@ exports.__esModule = true;
 
 import React from 'react';
 
-import SwitchableImageFrame from './SwitchableImageFrame';
+import ScrollableImageFrame from './ScrollableImageFrame';
+import ContentParagraph from './ContentParagraph';
 
 
 
 const ImageWithTextPage = React.createClass({
+
+
     render: function () {
-        const images = [
-            {
-                src: 'https://c1.staticflickr.com/3/2925/33712728246_9f5e46bddd_b.jpg',
-                alt: 'we',
-            },
-            {
-                src: 'https://github.com/leglars/portfolio/blob/master/react-slick/statics/images/we/whisper_effect_title_hero_2.jpg?raw=true',
-                alt: 'we exhibition',
-            },
-            {
-                src: 'https://github.com/leglars/portfolio/blob/master/react-slick/statics/images/we/whisper_effect_inspire_everydaywhisper.jpg?raw=true',
-                alt: "Everyday Whisper"
-            },
-            {
-                src: 'https://github.com/leglars/portfolio/blob/master/react-slick/statics/images/we/whisper_effect_inspire_listentree.jpg?raw=true',
-                alt: "Listen Tree"
-            },
-            {
-                src: 'https://github.com/leglars/portfolio/blob/master/react-slick/statics/images/we/whisper_effect_inspire_tellYouSecretToaTreeHole.jpg?raw=true',
-                alt: "Tell your secret to a tree hole"
-            }
-        ];
+        const {page, styleId} = this.props;
 
         const size = {
-            width: 600,
-            height: 400,
+            width: "inherit",
+            height: 450,
         };
 
         return (
-            <div className="imageFrame">
-                <SwitchableImageFrame images={images} {...size}/>
-            </div>
+            <div className={styleId}>
+                <div className='titleSpace'>
+                    <div className='clear'>
+                        <div className='titleBackground'>
+                            <div className='title'>{page.sectionTitle}</div>
+                        </div>
 
+                    </div>
+                    <div className='subTitle'>{page.subtitle}</div>
+                </div>
+                <div className="container">
+                    <div className="eight columns">
+                        <div className="imageFrame">
+                            <ScrollableImageFrame images={page.images} size={size}/>
+                        </div>
+                    </div>
+                    <div className="four columns">
+                        <div className="imageTextSpace">
+                            <ContentParagraph content={page.content}/>
+                        </div>
+                    </div>
+                </div>
+            </div>
         )
     }
 });

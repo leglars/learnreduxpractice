@@ -28,7 +28,7 @@ const TitlePage = React.createClass({
                     <div className='subTitle'>{page.subtitle}</div>
                 </div>
                 <div className='content'>
-                    <div className='halfPage columnRight two column container'>
+                    <div className='halfPage columnRight twoColumnCount column container'>
                         {page.content.map((block, index) => (
                             <div key={index} className="paragraph"
                                 dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(block)}}></div>

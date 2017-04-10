@@ -7,7 +7,6 @@
 exports.__esModule = true;
 
 import React from 'react';
-import DOMPurify from 'dompurify';
 
 import ContentParagraph from './ContentParagraph';
 
@@ -26,22 +25,26 @@ const ColumnsPage = React.createClass({
                     </div>
                     <div className='subTitle'>{page.subtitle}</div>
                 </div>
-                <div className="row">
+                <div className="row columnsPage">
                     {
-                        page.content.length == 4
+                        page.content.length === 4
                             ? page.content.map((block, index) => (
                                 <div key={block.key} className="three columns">
                                     <img src={block.image.src} alt={block.image.alt} />
                                     <ContentParagraph content={block.text}/>
                                 </div>
                             ))
-                            : page.content.length == 2
-                                ? page.content.map((block, index) => (
-                                    <div key={block.key} className="six columns">
-                                        <img src={block.image.src} alt={block.image.alt} />
-                                        <ContentParagraph content={block.text}/>
-                                    </div>
-                                ))
+                            : page.content.length === 2
+                                ? (<div className="fullpage fourColumnCount column container">
+                                        {page.content.map((block, index) => (
+                                            <span>
+                                                <img src={block.image.src} alt={block.image.alt} />
+                                                <ContentParagraph content={block.text}/>
+                                                <br />
+                                            </span>
+                                    ))}
+                                </div>)
+
                                 : page.content.map((block, index) => (
                                     <div key={block.key} className="four columns">
                                         <img src={block.image.src} alt={block.image.alt} />

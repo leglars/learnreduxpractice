@@ -106,6 +106,7 @@ $column-gap: 40px !default;
   /* space within a publi: */
   color: $content-color;
   line-height: $line-height;
+  text-align: left;
 
   display: table;
   margin-top: 14px + 16px + 26px + 72px - 64px;
@@ -117,6 +118,23 @@ $column-gap: 40px !default;
   &:last-child {
     margin-bottom: 0;
   }
+  h3 {
+    font-size: 18px;
+    text-indent: 0;
+    margin-bottom: 0;
+  }
+}
+
+.theEnterPoint .xdj .columnsPage {
+  .container {
+    width: 95%;
+  }
+  .paragraph {
+    &:last-child {
+      margin-bottom: 64px;
+    }
+  }
+
 }
 
 .theEnterPoint .columnRight {
@@ -124,19 +142,20 @@ $column-gap: 40px !default;
   padding-left: $column-gap / 2;
 }
 
-.theEnterPoint .two {
+.theEnterPoint .twoColumnCount {
   column-count: 2;
   -webkit-column-count: 2;
   -moz-column-count: 2;
 }
 
-.theEnterPoint .four {
+.theEnterPoint .fourColumnCount {
   column-count: 4;
   -webkit-column-count: 4;
   -moz-column-count: 4;
 }
 
 .theEnterPoint .container {
+
   column-gap: $column-gap;
   -webkit-column-gap: $column-gap;
   -moz-column-gap: $column-gap;
@@ -157,7 +176,10 @@ $column-gap: 40px !default;
 }
 
 
-//  *******************   scrollableImagePage   ****************  \\
-//.scrollableImageFrame img {
-//  width: 100%;
-//}
+
+// ******************* image with text page *****************
+.theEnterPoint .imageTextSpace {
+  padding-left: 24px;
+  position: absolute;
+  bottom: 0;
+}
