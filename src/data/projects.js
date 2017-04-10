@@ -41,7 +41,6 @@ const projects = [
                 sectionTitle: "Inspiration",
                 is: {
                     columns: true,
-                    four: true,
                 },
                 subtitle: "Explore the exiting projects",
                 content: [
@@ -51,7 +50,7 @@ const projects = [
                             src: 'https://github.com/leglars/portfolio/blob/master/src/statics/images/we/whisper_effect_inspire_everydaywhisper.jpg?raw=true',
                             alt: "Everyday Whisper"
                         },
-                        text: "In APT 8, <a href='https://www.qagoma.qld.gov.au/whats-on/exhibitions/apt8/artists/lawrence-english'><span class='reference'>Lawrence English took a sound sculpture called 'Everyday Whisper'</span></a>. Visitors, as parts of it, can provide a piece of voice processed like a whisper. The speaker array plays several pieces of whispers at the same time, which can give viewers wonderful acoustic experiences. This concept expands our understanding of the context of sound and encourages us to exploit the possibility of sound around our life."
+                        text: ["In APT 8, <a href='https://www.qagoma.qld.gov.au/whats-on/exhibitions/apt8/artists/lawrence-english'><span class='reference'>Lawrence English took a sound sculpture called 'Everyday Whisper'</span></a>. Visitors, as parts of it, can provide a piece of voice processed like a whisper. The speaker array plays several pieces of whispers at the same time, which can give viewers wonderful acoustic experiences. This concept expands our understanding of the context of sound and encourages us to exploit the possibility of sound around our life."]
                     },
                     {
                         key: 2,
@@ -59,7 +58,7 @@ const projects = [
                             src: 'https://github.com/leglars/portfolio/blob/master/src/statics/images/we/whisper_effect_inspire_listentree.jpg?raw=true',
                             alt: "Listen Tree"
                         },
-                        text: "<a href=''><span class='reference'>Listen Tree</span></a> uses the feature that solid objects can conduct sound waves to the tree in order to embed audio to the surrounding environment. From this project, we realised that the core of bone conduction could change the way people perceive sound, and from this, people can get sound messages by an unexpected approach."
+                        text: ["<a href=''><span class='reference'>Listen Tree</span></a> uses the feature that solid objects can conduct sound waves to the tree in order to embed audio to the surrounding environment. From this project, we realised that the core of bone conduction could change the way people perceive sound, and from this, people can get sound messages by an unexpected approach."]
                     },
                     {
                         key: 3,
@@ -67,7 +66,7 @@ const projects = [
                             src: 'https://github.com/leglars/portfolio/blob/master/src/statics/images/we/whisper_effect_inspire_tellYouSecretToaTreeHole.jpg?raw=true',
                             alt: "Tell your secret to a tree hole"
                         },
-                        text: "The folktale, <a href='https://medium.com/@mowen/cambodia-tell-a-tree-hole-your-secret-f661db9ab796'><span class='reference'>'Tell a secret to a tree hole.'</span></a>, has many version. It is said that it was originally from Ireland called <a href='http://spellbinders.org/story/the-king-with-horses-ears/'><span class='reference'>“The King With The Horse’s Ears”</span></a>. Combined with bone conduction, we wish to create a private space in public context so that people can release themselves by talking. Also, a folktale as background can take audience into the installation in a short time, like they are a role in story."
+                        text: ["The folktale, <a href='https://medium.com/@mowen/cambodia-tell-a-tree-hole-your-secret-f661db9ab796'><span class='reference'>'Tell a secret to a tree hole.'</span></a>, has many version. It is said that it was originally from Ireland called <a href='http://spellbinders.org/story/the-king-with-horses-ears/'><span class='reference'>“The King With The Horse’s Ears”</span></a>. Combined with bone conduction, we wish to create a private space in public context so that people can release themselves by talking. Also, a folktale as background can take audience into the installation in a short time, like they are a role in story."]
                     },
                     {
                         key: 4,
@@ -75,7 +74,7 @@ const projects = [
                             src: 'https://github.com/leglars/portfolio/blob/master/src/statics/images/we/whisper_effect_inspire_odcc.jpg?raw=true',
                             alt: "Talking Window"
                         },
-                        text: "The design group noticed that people would like to lean on the window when they’re tired on public transportation. Therefore, they created the <a href='https://youtu.be/pOnySNREmj0'><span class='reference'>'Talking Window'</span></a> to send some messages through the window to passengers. This project shows privacy is a part of bone conduction. So audience sometimes has an illusion that he is the chosen one."
+                        text: ["The design group noticed that people would like to lean on the window when they’re tired on public transportation. Therefore, they created the <a href='https://youtu.be/pOnySNREmj0'><span class='reference'>'Talking Window'</span></a> to send some messages through the window to passengers. This project shows privacy is a part of bone conduction. So audience sometimes has an illusion that he is the chosen one."]
                     },
                 ]
             },
@@ -172,6 +171,143 @@ const projects = [
     },
     {
         projectId: "3",
+        projectURL: "xuedaoji-speechdailypractice",
+        title: "XueDaoJi Speech Daily Practice",
+        subtitle: "An affordable proffessional speech test training service",
+        styleId: "xdj",
+        titleImage: [
+            {
+                alt: "",
+                src: "",
+            }
+        ],
+        sections: [
+            {
+                sectionTitle: "Introduction",
+                is: {titlePage: true,},
+                title: "XueDaoJi - Speech Practice",
+                subtitle: "An affordable premium English speech training service",
+                heroImages: [
+                    {
+                        src: 'https://github.com/leglars/portfolio/blob/master/src/statics/images/we/whisper_effect_title_hero_1.jpg?raw=true',
+                        alt: 'we exhibition',
+                        key: 1,
+                    },
+                    {
+                        src: 'https://github.com/leglars/portfolio/blob/master/src/statics/images/we/whisper_effect_title_hero_2.jpg?raw=true',
+                        alt: 'we exhibition',
+                        key: 2,
+                    }
+                ],
+                content: [
+                    "XueDaoJi is an English educational agency located in Hefei, China. It provides superior academic English test training service - SAT, AP, TOEFL and IELTS.",
+                    "XueDaoJi - Speech Practice is a mobile app based on WeChat mini program framework. Through it, I desire to provide an professional online English speech practice service for Chinese English language test examinee, TOEFLr and IELTSer, with an affordable price. Besides, applying mini program framework, this app can offer a ready-access-upon-use experience that a user can open the app at any time without any installation."
+                ]
+            },
+            {
+                sectionTitle: "Background",
+                is: { columns: true },
+                title: "Background",
+                subtitle: "Seek new market opportunity",
+                content: [
+                    {
+                        key: 1,
+                        image: {
+                            src: 'https://c1.staticflickr.com/4/3941/33568545700_6bb001084a_n.jpg',
+                            alt: "WeChat"
+                        },
+                        text: [
+                        "<h3>WeChat</h3>",
+                        "In China, WeChat is the most popular IM and social media platform. However, companioning with Official Account Platform and WeChat Pay, WeChat become a universal app. The users can almost do anything related with daily life on it. A report shows there are 700 million monthly active users in 2016. Almost every Chinese smartphone user has a WeChat account. To a large extent, it has become THE app in China.",
+                        "In Jan 2017, WeChat officially released mini program platform and development framework to public. Through APIs, a mini program can directly access abundant WeChat’s features, such as authority, payment, IM, voice message, etc. Compared with developing a native app, by the help of WeChat platform, Mini Program has a simpler developing structure and more powerful distribution channel. By the way, cross-platform is also an attractive feature of the mini program.",
+                        "Mini Program promotes a ready-access-upon-use philosophy. It says users just go to open an app without any installation and sign-in requirement (WeChat authority) when they want to use it. This scenario fits many small apps."
+
+                        ]
+                    },
+                    {
+                        key: 2,
+                        image: {
+                            src: 'https://c1.staticflickr.com/3/2942/33140287513_1e3ff58d32_n.jpg',
+                            alt: "Everyday Whisper"
+                        },
+                        text: [
+                        "<h3>Oversea Study Wave</h3>",
+                        "With the burgeoning of oversea study market, language teaching and training industry gains a quick development in China. The other factor pushing this boom is that its target consumers, in most cases, have a high payment ability and an active consumption willing. Therefore, enormous people come in to seek the opportunity."
+                        ]
+                    },
+                ]
+            },
+            {
+                sectionTitle: "Problem Scope",
+                is: {},
+                title: "Problem Scope",
+                subtitle: "An affordable premium English speech training service",
+                content: [
+                    "XueDaoJi is an English educational agency located in Hefei, China. It provides superior academic English test training service - SAT, AP, TOEFL and IELTS.",
+                    "XueDaoJi - Speech Practice is a mobile app based on WeChat mini program framework. Through it, I desire to provide an professional online English speech practice service for Chinese English language test examinee, TOEFLr and IELTSer, with an affordable price. Besides, applying mini program framework, this app can offer a ready-access-upon-use experience that a user can open the app at any time without any installation."
+                ]
+            },
+            {
+                sectionTitle: "Interaction Flow",
+                is: { imageWithText: true },
+                title: "Interaction Flow",
+                subtitle: "Interaction Sequence & User Journey",
+                images: [
+                    {
+                        src: "https://c1.staticflickr.com/3/2831/33140773723_edbe034775_o.jpg",
+                        alt: "Interaction Sequence"
+                    },
+                    {
+                        src: "https://c1.staticflickr.com/3/2919/33824154311_3dd5a91a86_o.jpg",
+                        alt: "New User Sign in"
+                    },
+                    {
+                        src: "https://c1.staticflickr.com/3/2846/33824154231_e13ab5e0a5_o.jpg",
+                        alt: "Daily Practice"
+                    },
+                    {
+                        src: "https://c1.staticflickr.com/3/2896/33569067050_968a0d5443_o.jpg",
+                        alt: "Teacher Evaluation Workflow"
+                    },
+                ],
+                content: [
+                    "XueDaoJi is an English educational agency located in Hefei, China. It provides superior academic English test training service - SAT, AP, TOEFL and IELTS.",
+                    "XueDaoJi - Speech Practice is a mobile app based on WeChat mini program framework. Through it, I desire to provide an professional online English speech practice service for Chinese English language test examinee, TOEFLr and IELTSer, with an affordable price. Besides, applying mini program framework, this app can offer a ready-access-upon-use experience that a user can open the app at any time without any installation."
+                ]
+            },
+            {
+                sectionTitle: "Visual Design",
+                is: { imageWithText: true },
+                title: "Visual Design",
+                subtitle: "Interaction Sequence & User Journey",
+                images: [
+                    {
+                        src: "https://c1.staticflickr.com/3/2831/33140773723_edbe034775_o.jpg",
+                        alt: "Interaction Sequence"
+                    },
+                    {
+                        src: "https://c1.staticflickr.com/3/2919/33824154311_3dd5a91a86_o.jpg",
+                        alt: "New User Sign in"
+                    },
+                    {
+                        src: "https://c1.staticflickr.com/3/2846/33824154231_e13ab5e0a5_o.jpg",
+                        alt: "Daily Practice"
+                    },
+                    {
+                        src: "https://c1.staticflickr.com/3/2896/33569067050_968a0d5443_o.jpg",
+                        alt: "Teacher Evaluation Workflow"
+                    },
+                ],
+                content: [
+                    "XueDaoJi is an English educational agency located in Hefei, China. It provides superior academic English test training service - SAT, AP, TOEFL and IELTS.",
+                    "XueDaoJi - Speech Practice is a mobile app based on WeChat mini program framework. Through it, I desire to provide an professional online English speech practice service for Chinese English language test examinee, TOEFLr and IELTSer, with an affordable price. Besides, applying mini program framework, this app can offer a ready-access-upon-use experience that a user can open the app at any time without any installation."
+                ]
+            },
+
+        ],
+    },
+    {
+        projectId: "4",
         title: "In The Know",
         projectURL: "intheknow",
         styleId: "itk",
@@ -220,7 +356,7 @@ const projects = [
         ]
     },
     {
-        projectId: "4",
+        projectId: "5",
         title: "City Talk",
         projectURL: "citytalk",
         subtitle: "Use your body to listen in the world",
@@ -270,7 +406,7 @@ const projects = [
         ]
     },
     {
-        projectId: "6",
+        projectId: "7",
         title: "Web Design Collection",
         projectURL: "wdc",
         subtitle: "My web design works in last two years",
