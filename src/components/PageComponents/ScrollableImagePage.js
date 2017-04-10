@@ -32,7 +32,7 @@ const ScrollableImagePage = React.createClass({
     }
 });
 
-ScrollableImagePage.propTypes = {
+ScrollableImagePage.propsTypes = {
     page: React.PropTypes.object,
     styleId: React.PropTypes.string
 };

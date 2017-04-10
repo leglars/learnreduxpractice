@@ -54,7 +54,7 @@ const Next = ({ path, content }) => (
     </div>
 );
 
-FlipButtons.propTypes = {
+FlipButtons.propsTypes = {
     previous: React.PropTypes.string,
     next: React.PropTypes.string,
     content: React.PropTypes.array,

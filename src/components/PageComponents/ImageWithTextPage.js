@@ -48,7 +48,7 @@ const ImageWithTextPage = React.createClass({
     }
 });
 
-ImageWithTextPage.propTypes = {
+ImageWithTextPage.propsTypes = {
     page: React.PropTypes.object,
     styleId: React.PropTypes.string
 };

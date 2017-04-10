@@ -47,7 +47,7 @@ const SwitchableImageFrame = React.createClass({
     }
 });
 
-SwitchableImageFrame.propTypes = {
+SwitchableImageFrame.propsTypes = {
     settings: React.PropTypes.object,
     images: React.PropTypes.arrayOf(
         React.PropTypes.object

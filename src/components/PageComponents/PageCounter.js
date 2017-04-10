@@ -13,7 +13,7 @@ const PageCounter = React.createClass({
     },
 });
 
-PageCounter.protoTypes = {
+PageCounter.propsTypes = {
     currentPage: React.PropTypes.number,
     totalPages: React.PropTypes.number
 };

@@ -32,7 +32,7 @@ $line-height: 24px !default;
   height: 300px;
 }
 
-.we, .toy, .itk, .ct, .live, .tsdp, .memory, .wdc, .cc{
+.we, .toy, .itk, .ct, .live, .xdj, .memory, .wdc, .cc{
   position: relative;
 }
 
@@ -112,6 +112,7 @@ $column-gap: 40px !default;
 }
 
 .theEnterPoint .paragraph {
+  text-indent: 18px;
   margin-bottom: $line-height / 2;
   &:last-child {
     margin-bottom: 0;

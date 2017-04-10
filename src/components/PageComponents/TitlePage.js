@@ -30,7 +30,8 @@ const TitlePage = React.createClass({
                 <div className='content'>
                     <div className='halfPage columnRight two column container'>
                         {page.content.map((block, index) => (
-                            <div key={index} className="paragraph">{block}</div>
+                            <div key={index} className="paragraph"
+                                dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(block)}}></div>
                         ))}
                     </div>
                 </div>
@@ -39,7 +40,7 @@ const TitlePage = React.createClass({
     }
 });
 
-TitlePage.protoTypes = {
+TitlePage.propsTypes = {
     page: React.PropTypes.object,
     styleId: React.PropTypes.string,
 };
