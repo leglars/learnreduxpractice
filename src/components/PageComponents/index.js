@@ -16,8 +16,8 @@ exports.PageCounter = _PageCounter.default;
 const _TitlePage = require("./TitlePage");
 exports.TitlePage = _TitlePage.default;
 
-const _FourColumnsPage = require("./FourColumnsPage");
-exports.FourColumnsPage = _FourColumnsPage.default;
+const _ColumnsPage = require("./ColumnsPage");
+exports.ColumnsPage = _ColumnsPage.default;
 
 const _ImageWithTextPage = require("./ImageWithTextPage");
 exports.ImageWithTextPage = _ImageWithTextPage.default;
