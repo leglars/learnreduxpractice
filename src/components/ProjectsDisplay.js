@@ -5,7 +5,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import '../statics/styles/projectsdisplay.css'
-import placeholder from '../statics/images/placeholder-43.jpg'
 
 
 
@@ -22,7 +21,7 @@ const ProjectsDisplay = React.createClass({
                 {this.props.data.projects.map((project, index) =>
                     <div key={index} className="three columns">
                         <Link  to={`/projects/${project.projectURL}/page/1`}>
-                            <img key={index} src={placeholder} alt={project.title} />
+                            <img key={index} src={project.titleImage.src} alt={project.titleImage.alt} />
                         </Link>
                     </div>
                 )}

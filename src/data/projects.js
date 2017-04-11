@@ -9,12 +9,10 @@ const projects = [
         title: "Whisper Effect",
         subtitle: "Use your body to listen in the world",
         styleId: "we",
-        titleImage: [
-            {
-                alt: "",
-                src: "",
-            }
-        ],
+        titleImage: {
+                src: "https://c1.staticflickr.com/3/2904/33816558092_17c7206588.jpg",
+                alt: "we title image",
+            },
         sections: [
             {
                 sectionTitle: "Introduction",
@@ -97,12 +95,10 @@ const projects = [
         projectURL: "thinkingofyou",
         subtitle: "Enhance family connection by just one touch",
         styleId: "toy",
-        titleImage: [
-            {
-                alt: "",
-                src: "",
-            }
-        ],
+        titleImage:{
+                src: "https://c1.staticflickr.com/3/2843/33974491825_670774c923.jpg",
+                alt: "placeholder",
+            },
         sections: [
             {
                 sectionTitle: "Introduction",
@@ -175,18 +171,16 @@ const projects = [
         title: "XueDaoJi Speech Daily Practice",
         subtitle: "An affordable proffessional speech test training service",
         styleId: "xdj",
-        titleImage: [
-            {
-                alt: "",
-                src: "",
-            }
-        ],
+        titleImage:{
+                src: "https://c1.staticflickr.com/3/2843/33974491825_670774c923.jpg",
+                alt: "placeholder",
+            },
         sections: [
             {
                 sectionTitle: "Introduction",
                 is: {titlePage: true,},
                 title: "XueDaoJi - Speech Practice",
-                subtitle: "An affordable premium English speech training service",
+                subtitle: "An affordable premium speech training service",
                 heroImages: [
                     {
                         src: 'https://github.com/leglars/portfolio/blob/master/src/statics/images/we/whisper_effect_title_hero_1.jpg?raw=true',
@@ -302,6 +296,21 @@ const projects = [
                     "XueDaoJi is an English educational agency located in Hefei, China. It provides superior academic English test training service - SAT, AP, TOEFL and IELTS."
                 ]
             },
+            {
+                sectionTitle: "Prototyping",
+                is: { imageWithText: true },
+                title: "Prototyping",
+                subtitle: "Interaction Sequence & User Journey",
+                images: [
+                    {
+                        src: "https://github.com/leglars/portfolio/blob/master/src/statics/images/xdj/ezgif.com-resize.gif?raw=true",
+                        alt: "Interaction Prototyping"
+                    }
+                ],
+                content: [
+                    "XueDaoJi is an English educational agency located in Hefei, China. It provides superior academic English test training service - SAT, AP, TOEFL and IELTS."
+                ]
+            },
 
         ],
     },
@@ -311,12 +320,10 @@ const projects = [
         projectURL: "intheknow",
         styleId: "itk",
         subtitle: "Use your body to listen in the world",
-        titleImage: [
-            {
-                alt: "",
-                src: "",
-            }
-        ],
+        titleImage:{
+                src: "https://c1.staticflickr.com/3/2843/33974491825_670774c923.jpg",
+                alt: "placeholder",
+            },
         sections: [
             {
                 sectionTitle: "Introduction",
@@ -359,12 +366,10 @@ const projects = [
         title: "City Talk",
         projectURL: "citytalk",
         subtitle: "Use your body to listen in the world",
-        titleImage: [
-            {
-                alt: "",
-                src: "",
-            }
-        ],
+        titleImage:{
+                src: "https://c1.staticflickr.com/3/2843/33974491825_670774c923.jpg",
+                alt: "placeholder",
+            },
         sections: [
             {
                 sectionTitle: "introduction",
@@ -384,12 +389,10 @@ const projects = [
         title: "Live",
         projectURL: "live",
         subtitle: "Use your body to listen in the world",
-        titleImage: [
-            {
-                alt: "",
-                src: "",
-            }
-        ],
+        titleImage:{
+                src: "https://c1.staticflickr.com/3/2843/33974491825_670774c923.jpg",
+                alt: "placeholder",
+            },
         sections: [
             {
                 sectionTitle: "introduction",
@@ -410,12 +413,10 @@ const projects = [
         projectURL: "wdc",
         subtitle: "My web design works in last two years",
         styleId: "wdc",
-        titleImage: [
-            {
-                alt: "",
-                src: "",
-            }
-        ],
+        titleImage:{
+                src: "https://c1.staticflickr.com/3/2843/33974491825_670774c923.jpg",
+                alt: "placeholder",
+            },
         sections: [
             {
                 sectionTitle: "Introduction",

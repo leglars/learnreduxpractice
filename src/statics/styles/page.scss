@@ -65,6 +65,10 @@ $line-height: 24px !default;
   background-color: #757575;
 }
 
+.xdj .titleBackground {
+  padding: 14px 32px 0 24px;
+}
+
 .theEnterPoint .whiteFrame {
   position: absolute;
 
@@ -77,7 +81,8 @@ $line-height: 24px !default;
 }
 
 .theEnterPoint .titleSpace {
-  margin-bottom: 36px;
+  margin-bottom: 24px;
+
 }
 
 
@@ -159,8 +164,6 @@ $column-gap: 40px !default;
   column-gap: $column-gap;
   -webkit-column-gap: $column-gap;
   -moz-column-gap: $column-gap;
-  margin: 0;
-  width: 100%;
 
 }
 
@@ -184,4 +187,30 @@ $column-gap: 40px !default;
   padding-right: 64px;
   position: absolute;
   bottom: 0;
+}
+
+.theEnterPoint {
+  .four.columns {
+    img {
+
+      width: auto;
+      height: 480px;
+      &:after {
+        clear: both;
+        display: table;
+      }
+    }
+  }
+
+  .textToBottom {
+    width: 90%;
+    position: absolute;
+    left: 120%;
+    bottom: 20%;
+    &:after {
+      clear: both;
+      display: block;
+      content: ' ';
+    }
+  }
 }

@@ -234,7 +234,7 @@ export var InnerSlider = React.createClass({
             {this.props.children}
           </Track>
         </div>
-        <div>
+        <div className="switcher">
             {prevArrow}
             {dots}
             {nextArrow}

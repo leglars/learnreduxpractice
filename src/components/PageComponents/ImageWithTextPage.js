@@ -33,16 +33,36 @@ const ImageWithTextPage = React.createClass({
                     <div className='subTitle'>{page.subtitle}</div>
                 </div>
                 <div className="container">
-                    <div className="eight columns">
-                        <div className="imageFrame">
-                            <ScrollableImageFrame images={page.images} size={size}/>
-                        </div>
-                    </div>
-                    <div className="four columns">
-                        <div className="imageTextSpace">
-                            <ContentParagraph content={page.content}/>
-                        </div>
-                    </div>
+                    {
+                        page.images.length > 1
+                        ? (
+                            <div>
+                                <div className="eight columns">
+                                    <div className="imageFrame">
+                                        <ScrollableImageFrame images={page.images} size={size}/>
+                                    </div>
+                                </div>
+                                <div className="four columns">
+                                    <div className="imageTextSpace">
+                                        <ContentParagraph content={page.content}/>
+                                    </div>
+                                </div>
+                            </div>
+                            )
+                            : (
+                            <div className="row">
+                                <div className="four columns relative">
+                                    <div className="imageFrame">
+                                        <img src={page.images[0].src} alt={page.images[0].alt}/>
+                                        <div className="textToBottom">
+                                            <ContentParagraph content={page.content}/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            )
+                    }
                 </div>
             </div>
         )
