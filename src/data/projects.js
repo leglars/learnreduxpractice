@@ -282,25 +282,24 @@ const projects = [
                 subtitle: "Interaction Sequence & User Journey",
                 images: [
                     {
-                        src: "https://c1.staticflickr.com/3/2831/33140773723_edbe034775_o.jpg",
-                        alt: "Interaction Sequence"
+                        src: "https://c1.staticflickr.com/3/2807/33927398556_8c117b1ca2_b.jpg",
+                        alt: "Dashboard"
                     },
                     {
-                        src: "https://c1.staticflickr.com/3/2919/33824154311_3dd5a91a86_o.jpg",
-                        alt: "New User Sign in"
+                        src: "https://c1.staticflickr.com/3/2918/33810665082_4cf883fff1_b.jpg",
+                        alt: "Enrollment & Payment"
                     },
                     {
-                        src: "https://c1.staticflickr.com/3/2846/33824154231_e13ab5e0a5_o.jpg",
-                        alt: "Daily Practice"
+                        src: "https://c1.staticflickr.com/3/2834/33155321403_1a29564cc6_b.jpg",
+                        alt: "Practice Page"
                     },
                     {
-                        src: "https://c1.staticflickr.com/3/2896/33569067050_968a0d5443_o.jpg",
-                        alt: "Teacher Evaluation Workflow"
+                        src: "https://c1.staticflickr.com/3/2873/33927397816_25bfb5773f_c.jpg",
+                        alt: "Simple Answer"
                     },
                 ],
                 content: [
-                    "XueDaoJi is an English educational agency located in Hefei, China. It provides superior academic English test training service - SAT, AP, TOEFL and IELTS.",
-                    "XueDaoJi - Speech Practice is a mobile app based on WeChat mini program framework. Through it, I desire to provide an professional online English speech practice service for Chinese English language test examinee, TOEFLr and IELTSer, with an affordable price. Besides, applying mini program framework, this app can offer a ready-access-upon-use experience that a user can open the app at any time without any installation."
+                    "XueDaoJi is an English educational agency located in Hefei, China. It provides superior academic English test training service - SAT, AP, TOEFL and IELTS."
                 ]
             },
 

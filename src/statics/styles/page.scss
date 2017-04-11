@@ -159,6 +159,8 @@ $column-gap: 40px !default;
   column-gap: $column-gap;
   -webkit-column-gap: $column-gap;
   -moz-column-gap: $column-gap;
+  margin: 0;
+  width: 100%;
 
 }
 
@@ -179,7 +181,7 @@ $column-gap: 40px !default;
 
 // ******************* image with text page *****************
 .theEnterPoint .imageTextSpace {
-  padding-left: 24px;
+  padding-right: 64px;
   position: absolute;
   bottom: 0;
 }
