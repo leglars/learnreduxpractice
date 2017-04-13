@@ -108,6 +108,14 @@
 
 }
 
+@media (#{$bp-larger-than-desktophd}) {
+  .container {
+    width: auto;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}
+
 // Clearing
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 

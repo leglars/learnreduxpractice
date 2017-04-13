@@ -23,6 +23,12 @@ a {
   //  color: darken($link-color, 5%);
   //}
   text-decoration: none;
+  &:visited {
+    text-decoration: none;
+  }
+  &:link {
+    text-decoration: none;
+  }
 }
 
 // Misc
@@ -33,4 +39,8 @@ hr {
   margin-bottom: 3.5rem;
   border-width: 0;
   border-top: 1px solid $light-grey;
+}
+
+p {
+  margin: 0;
 }

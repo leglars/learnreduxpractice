@@ -20,7 +20,7 @@ const Index = React.createClass({
 
         // TODO: 900 is a temp number, it should connect with media query
         if (width > 900) {
-            height = window.innerHeight - (81 + 190 + 48);
+            height = window.innerHeight - (81 + 110 + 48);
             this.setState({height: height});
         }
     },

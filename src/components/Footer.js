@@ -14,32 +14,31 @@ import '../statics/styles/footer.css';
 const Footer = React.createClass({
     render: function () {
         return (
-            <div id="footer" className="wrap">
+            <div className="footer">
                 <div className="container">
-                    <div className="row">
-                        <div className="eight columns">
-                            <p className="intro">
-                                Nicholas Zheng is a UX designer. He likes to explore the potential
-                                between people and technologies. He also works as a front-end developer.
-                                Using programming skill to realize idea makes him exciting.
-                            </p>
+                    <div className="left">
+                        <div className="brand">
+                            <div className="name">Nicholas Zheng</div>
+                            <div className="position">UX Designer | Front-End Developer</div>
                         </div>
-                        <div className="four columns">
-                            <div className="social-media">
-                                <ul>
-                                    <a href="#"><li className="icon"><FaLinkedinSquare size={32} /></li></a>
-                                    <a href="#"><li className="icon"><MdEmail size={32} /> </li></a>
-                                    <a href="#"><li className="icon"><FaGithub size={32} /></li></a>
-                                    <a href="#"><li className="icon"><FaFlickr size={32} /> </li></a>
-                                </ul>
-                            </div>
-                            <div className="copyright">
-                                <p>Copy right @ Nicholas Zheng   2017</p>
-                            </div>
+                    </div>
+
+                    <div className="right">
+                        <div className="social-media">
+                            <ul>
+                                <li className="icon"><a href="#"><FaLinkedinSquare size={32}/></a></li>
+                                <li className="icon"><a href="#"><MdEmail size={32}/></a></li>
+                                <li className="icon"><a href="#"><FaGithub size={32}/></a></li>
+                                <li className="icon"><a href="#"><FaFlickr size={32}/></a></li>
+                            </ul>
+                        </div>
+                        <div className="copyright">
+                            Copy right @ Nicholas Zheng 2017
                         </div>
                     </div>
                 </div>
             </div>
+
         )
     }
 });
