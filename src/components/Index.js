@@ -4,7 +4,7 @@
 import React from 'react';
 
 import Footer from './Footer';
-import ProjectsDisplay from './ProjectsDisplay';
+import Works from './Works';
 
 
 import '../statics/styles/index.css';
@@ -20,7 +20,7 @@ const Index = React.createClass({
 
         // TODO: 900 is a temp number, it should connect with media query
         if (width > 900) {
-            height = window.innerHeight - (81 + 110 + 48);
+            height = window.innerHeight - (81 + 110);
             this.setState({height: height});
         }
     },
@@ -46,7 +46,7 @@ const Index = React.createClass({
         return(
             <div>
                 <div className="container">
-                    <div className="index-wrap" style={style}>
+                    <div className="wrap" style={style}>
                         {/*TODO: add a new filter*/}
                         {/*<div className="nav">*/}
                             {/*<ul>*/}
@@ -56,7 +56,7 @@ const Index = React.createClass({
                             {/*</ul>*/}
                         {/*</div>*/}
 
-                        <ProjectsDisplay {...this.props}/>
+                        <Works minHeight={this.state.height} {...this.props}/>
                     </div>
                 </div>
                 <Footer/>

@@ -1,0 +1,201 @@
+@import "./base/variables";
+
+.works {
+  margin: 0 auto;
+  padding-top: 32px;
+  width: auto;
+  text-align: left;
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .title {
+    transform: rotate(90deg);
+    font-weight: bolder;
+    font-size: 144px;
+    color: #d3d3d3;
+    position: absolute;
+    top: 212px;
+    left: -132px;
+    z-index: 0;
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }
+
+  .projects{
+    margin-top: 100px - 32px;
+    margin-left: 164px;
+    z-index: 9;
+
+    .labelColumn {
+      float: none;
+      margin-left: 0;
+
+      ul {
+        list-style: none;
+        padding: 0;
+        position: relative;
+        margin: 0;
+        li {
+          position: relative;
+          margin-bottom: 36px;
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          a{
+            color: #8F8F8F;
+            font-size: 48px;
+            line-height: 48px;
+            transition: color 100ms ease-in-out;
+            &:hover {
+              color: darken(#8F8F8F, 20%);
+            }
+          }
+        }
+        .disappear {
+          display: none;
+        }
+      }
+      }
+    }
+
+  .navToAbout {
+    position: absolute;
+    bottom: 12px;
+    background-color: white;
+    a {
+      height: auto;
+      color: #8f8f8f;
+      transition: color 100ms ease-in-out;
+      &:hover {
+        color: darken(#8F8F8F, 20%)
+      }
+      .linkText {
+        font-size: 36px;
+        vertical-align: middle;
+        top: 0;
+      }
+    }
+  }
+
+  }
+
+@media (#{$bp-larger-than-desktophd}) {
+  .works {
+    .projects {
+      .labelColumn {
+        float: left;
+        margin-left: 64px;
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+    }
+    .navToAbout {
+      bottom: 32px;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//.projectsdisplay-wrap a img {
+//  width: 100%;
+//  height: auto;
+//  background-color: #4a4a4a;
+//  margin-left: 40px;
+//}
+//
+//.projectsdisplay-wrap a:first-child img {
+//  margin-left: 0;
+//}
+
+
+  // .three control the new line block
+  // less 1200 (bp-larger-than-desktophd) is 3 columns    .three.columns control
+  // new line is 2n+1
+//@media (#{$bp-larger-than-phablet}) {
+//
+//  .projectsdisplay-wrap .three {
+//      margin-left: 5%;
+//      &:nth-child(1) {
+//        margin-left: 0;
+//      }
+//      &:nth-child(4) {
+//        margin-left: 0;
+//      }
+//      &:nth-child(7) {
+//        margin-left: 0;
+//      }
+//  }
+//  .projectsdisplay-wrap .three.columns {
+//    width: 30%;
+//
+//    margin-top: 36px;
+//    &:nth-child(1) {
+//      margin-top: 0;
+//    }
+//    &:nth-child(2) {
+//      margin-top: 0;
+//    }
+//    &:nth-child(3) {
+//      margin-top: 0;
+//    }
+//
+//  }
+//}
+//
+//@media (#{$bp-larger-than-desktophd}) {
+//  .projectsdisplay-wrap .three {
+//    margin-left: 4%;
+//
+//    // reset the margin-left for node which has been set above
+//    &:nth-child(4) {
+//      margin-left: 4%;
+//    }
+//    &:nth-child(7) {
+//      margin-left: 4%;
+//    }
+//
+//    // set new 2n + 1 node
+//    &:nth-child(5) {
+//      margin-left: 0;
+//    }
+//    &:nth-child(11) {
+//      margin-left: 0;
+//    }
+//  }
+//
+//  .projectsdisplay-wrap .three.columns {
+//    width: 22%;
+//    &:nth-child(1) {
+//      margin-top: 0;
+//    }
+//    &:nth-child(2) {
+//      margin-top: 0;
+//    }
+//    &:nth-child(3) {
+//      margin-top: 0;
+//    }
+//    &:nth-child(4) {
+//      margin-top: 0;
+//    }
+//  }
+//}
