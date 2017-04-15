@@ -16,26 +16,30 @@ const ImageWithTextPage = React.createClass({
         width: -1,
     },
 
-    setTextWidth: function () {
+    defaultImageSize: {
+        width: -1,
+        height: -1
+    },
+
+    setElementWidth: function () {
         let imageFrameWidth;
         if (this.state) {
             imageFrameWidth = this.state.imageFrameDimensions.width;
             const windowWidth = window.innerWidth;
             const textFrameWidth = windowWidth - imageFrameWidth - 64 - 200;
             this.textFrameSize = {width: textFrameWidth};
+            this.defaultImageSize={
+                width: 2/3 * (windowWidth - 200),
+                height: 450
+            };
         }
     },
 
     render: function () {
         const {page, styleId} = this.props;
 
-        const size = {
-            width: "inherit",
-            height: 450,
-        };
-
         //initial textFrameWidth
-        this.setTextWidth();
+        this.setElementWidth();
 
         return (
             <div className={styleId}>
@@ -52,7 +56,7 @@ const ImageWithTextPage = React.createClass({
                                             this.setState({imageFrameDimensions})
                                         }>
                                         <div className="imageFrame">
-                                            <ScrollableImageFrame images={page.images} size={size} styleId={styleId}/>
+                                            <ScrollableImageFrame images={page.images} size={this.defaultImageSize} styleId={styleId}/>
                                         </div>
                                     </Measure>
                                 </div>
