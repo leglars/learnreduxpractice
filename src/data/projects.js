@@ -168,7 +168,7 @@ const projects = [
     {
         projectId: "3",
         projectURL: "xuedaoji-speechdailypractice",
-        title: "XueDaoJi Speech Daily Practice",
+        title: "Speech Practice App",
         subtitle: "An affordable proffessional speech test training service",
         styleId: "xdj",
         titleImage:{
@@ -233,12 +233,37 @@ const projects = [
             },
             {
                 sectionTitle: "Problem Scope",
-                is: {},
+                is: {columns: true},
                 title: "Problem Scope",
-                subtitle: "An affordable premium English speech training service",
+                subtitle: "",
                 content: [
-                    "XueDaoJi is an English educational agency located in Hefei, China. It provides superior academic English test training service - SAT, AP, TOEFL and IELTS.",
-                    "XueDaoJi - Speech Practice is a mobile app based on WeChat mini program framework. Through it, I desire to provide an professional online English speech practice service for Chinese English language test examinee, TOEFLr and IELTSer, with an affordable price. Besides, applying mini program framework, this app can offer a ready-access-upon-use experience that a user can open the app at any time without any installation."
+                    {
+                        key: 1,
+                        image: {
+                            src: "",
+                            alt: ""
+                        },
+                        text: [
+                        "The traditional language training is low-efficiency because there are many dispensable processes. However, 1-to-1 or small group teaching, which are considered as the best way to improve test performance, is cost. Furthermore, even some teachers admit that listening and speech courses have limited effect for students. Here, use a typical 1-to-1 speaking course as an example.",
+
+                        "<ul><li>1. Teacher gives a topic, and student speaks out his answer after a short time, which simulate the real testing environment</li>" +
+                        "<li>2. Critiques student's response and analyzes the problem in it</li>"+
+                        "<li>3. Review and analyze the topic</li>" +
+                        "<li>4. Help student to organize a sample answer and present other related phrase or sentence</li>" +
+                        "<li>5. Student practices</li>" +
+                        "<li>6. Have a break</li>" +
+                        "<li>7. Iterate</li>" +
+                        "<li>8. Arrange assignment based on student situation</li></ul>",
+
+                        "In fact, step 2 – 4 and 8 are the essential parts in a teaching event. The rest can be done by students themselves in private; however, it takes up almost 50% course time which means half tuition expense - around $50 per hour.",
+
+                        "Therefore, why we can't extract the essential parts and package as a service?",
+
+                        "Q1 & Q2 are considered the hardest sections in the TOEFL Speaking Test because of the particular testing form which has no preparing time for the testers. It requires a tester has a great speaking capacity. The best way to improve the performance in the examination is to do practice every day with teacher's guide.",
+
+                        "Short voice message, which is not longer than 60 second, is one of the core features of WeChat. Some training agencies ask their students to submit 45s speech every day as the assignment. And teachers critique these submissions.",
+                        ]
+                    }
                 ]
             },
             {
@@ -363,30 +388,7 @@ const projects = [
     },
     {
         projectId: "5",
-        title: "City Talk",
-        projectURL: "citytalk",
-        subtitle: "Use your body to listen in the world",
-        titleImage:{
-                src: "https://c1.staticflickr.com/3/2843/33974491825_670774c923.jpg",
-                alt: "placeholder",
-            },
-        sections: [
-            {
-                sectionTitle: "introduction",
-                subtitle: "",
-                content: "In this title, we apply bone conduction technology to change the way of listening and embed this innovative experience into a folktale - Don’t tell your secret to a tree hole. To deliver an intuitive experience, we consider the relationship between materials, metaphors, and behaviors",
-            },
-            {
-                sectionTitle: "inspire",
-                subtitle: "Laurence - Everyday Whisper",
-                content: "Swift the daily idea can bring us into a brand-new world."
-            }
-
-        ]
-    },
-    {
-        projectId: "5",
-        title: "Live",
+        title: "Live & Memory",
         projectURL: "live",
         subtitle: "Use your body to listen in the world",
         titleImage:{
@@ -397,10 +399,12 @@ const projects = [
             {
                 sectionTitle: "introduction",
                 subtitle: "",
+                is: {},
                 content: "In this title, we apply bone conduction technology to change the way of listening and embed this innovative experience into a folktale - Don’t tell your secret to a tree hole. To deliver an intuitive experience, we consider the relationship between materials, metaphors, and behaviors",
             },
             {
                 sectionTitle: "inspire",
+                is: {},
                 subtitle: "Laurence - Everyday Whisper",
                 content: "Swift the daily idea can bring us into a brand-new world."
             }
@@ -408,8 +412,8 @@ const projects = [
         ]
     },
     {
-        projectId: "7",
-        title: "Web Design Collection",
+        projectId: "6",
+        title: "Web Design",
         projectURL: "wdc",
         subtitle: "My web design works in last two years",
         styleId: "wdc",
@@ -542,6 +546,7 @@ const projects = [
 
         ]
     },
+    
 ];
 
 export default projects;

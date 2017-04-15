@@ -34,8 +34,7 @@ const ColumnsPage = React.createClass({
                                     <ContentParagraph content={block.text}/>
                                 </div>
                             ))
-                            : page.content.length === 2
-                                ? (<div className="fullpage fourColumnCount column container">
+                            : (<div className="fullpage fourColumnCount column container">
                                         {page.content.map((block, index) => (
                                             <span>
                                                 <img src={block.image.src} alt={block.image.alt} />
@@ -44,13 +43,6 @@ const ColumnsPage = React.createClass({
                                             </span>
                                     ))}
                                 </div>)
-
-                                : page.content.map((block, index) => (
-                                    <div key={block.key} className="four columns">
-                                        <img src={block.image.src} alt={block.image.alt} />
-                                        <ContentParagraph content={block.text}/>
-                                    </div>
-                                ))
 
                     }
                 </div>

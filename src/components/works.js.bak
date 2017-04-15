@@ -1,0 +1,41 @@
+/**
+ * Created by leglars on 2017/3/11.
+ */
+import React from 'react';
+import { Link } from 'react-router-dom';
+
+import '../statics/styles/works.css'
+
+
+
+const ProjectsDisplay = React.createClass({
+
+
+
+    render: function () {
+
+
+        return (
+            <div className="works">
+                <div className="title">
+                    WORKS
+                </div>
+                <div>
+                    <ul>
+                        {this.props.data.projects.map((project, index) =>
+                            <li>
+                                <Link to={`/projects/${project.projectURL}/page/1`}>
+                                    {project.title}
+                                </Link>
+                            </li>
+                        )}
+                    </ul>
+                </div>
+
+            </div>
+
+        )
+    }
+});
+
+export default ProjectsDisplay;
