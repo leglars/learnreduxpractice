@@ -23,6 +23,7 @@ a {
   //  color: darken($link-color, 5%);
   //}
   text-decoration: none;
+  cursor: pointer;
   &:visited {
     text-decoration: none;
   }
@@ -43,4 +44,10 @@ hr {
 
 p {
   margin: 0;
+}
+
+ul {
+  margin: 0;
+  -moz-padding-start: 0;
+  -webkit-padding-start: 0;
 }

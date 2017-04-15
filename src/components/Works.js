@@ -39,13 +39,13 @@ const Works = React.createClass({
                             {projects.map((project, index) =>
                                 index < half
                                     ? (
-                                        <li >
+                                        <li key={index}>
                                             <Link to={`/projects/${project.projectURL}/page/1`}>
                                                 <span className="label">{project.title}</span>
                                             </Link>
                                         </li>
                                     )
-                                    : <li className="disappear">disappear</li>
+                                    : <li key={index} className="disappear">disappear</li>
                             )}
                         </ul>
                     </div>
@@ -54,13 +54,13 @@ const Works = React.createClass({
                             {projects.map((project, index) =>
                                 index >= half
                                     ? (
-                                        <li>
+                                        <li key={index}>
                                             <Link to={`/projects/${project.projectURL}/page/1`}>
                                                 <span className="label">{project.title}</span>
                                             </Link>
                                         </li>
                                     )
-                                    : <li className="disappear">disappear</li>
+                                    : <li key={index} className="disappear">disappear</li>
                             )}
                         </ul>
                     </div>

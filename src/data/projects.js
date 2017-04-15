@@ -415,7 +415,7 @@ const projects = [
         projectId: "6",
         title: "Web Design",
         projectURL: "wdc",
-        subtitle: "My web design works in last two years",
+        subtitle: "Some web design works in last two years",
         styleId: "wdc",
         titleImage:{
                 src: "https://c1.staticflickr.com/3/2843/33974491825_670774c923.jpg",
@@ -430,13 +430,13 @@ const projects = [
                 keyword: ["HTML5", "CSS3", "jQuery", "Polymer", "Js", "Sass"],
                 heroImages: [
                     {
-                        src: 'https://github.com/leglars/portfolio/blob/master/src/statics/images/we/whisper_effect_title_hero_1.jpg?raw=true',
-                        alt: 'we exhibition',
+                        src: 'https://c1.staticflickr.com/3/2911/34003783406_4383143426.jpg',
+                        alt: 'Snapshot of InfiniteLeaders',
                         key: 1,
                     },
                     {
-                        src: 'https://github.com/leglars/portfolio/blob/master/src/statics/images/we/whisper_effect_title_hero_2.jpg?raw=true',
-                        alt: 'we exhibition',
+                        src: 'https://c1.staticflickr.com/3/2941/33201654504_d903be904b.jpg',
+                        alt: 'Snapshot of InTheKnow',
                         key: 2,
                     }
                 ],
@@ -444,7 +444,7 @@ const projects = [
 
             },
             {
-                is: {scrollableImagePage: true},
+                is: {imageWithText: true},
                 sectionTitle: "Course Portfolio",
                 subtitle: "DECO7350",
                 images: [
@@ -460,7 +460,7 @@ const projects = [
                 content: ["Swift the daily idea can bring us into a brand-new world."]
             },
             {
-                is: {scrollableImagePage: true},
+                is: {imageWithText: true},
                 sectionTitle: "Website Redesign",
                 subtitle: "DECO7120",
                 images: [
@@ -496,7 +496,7 @@ const projects = [
                 content: ["Swift the daily idea can bring us into a brand-new world."]
             },
             {
-                is: {scrollableImagePage: true},
+                is: {imageWithText: true},
                 sectionTitle: "In The Know",
                 subtitle: "social mobile computing",
                 images: [
@@ -520,7 +520,7 @@ const projects = [
                 content: ["Swift the daily idea can bring us into a brand-new world."]
             },
             {
-                is: {scrollableImagePage: true},
+                is: {imageWithText: true},
                 sectionTitle: "Truth Detective",
                 subtitle: "DECO7120",
                 images: [
@@ -546,7 +546,30 @@ const projects = [
 
         ]
     },
-    
+    {
+        projectId: "7",
+        title: "City Talk",
+        projectURL: "citytalk",
+        subtitle: "Use your body to listen in the world",
+        titleImage:{
+                src: "https://c1.staticflickr.com/3/2843/33974491825_670774c923.jpg",
+                alt: "placeholder",
+            },
+        sections: [
+            {
+                sectionTitle: "introduction",
+                subtitle: "",
+                is: {},
+                content: "In this title, we apply bone conduction technology to change the way of listening and embed this innovative experience into a folktale - Don’t tell your secret to a tree hole. To deliver an intuitive experience, we consider the relationship between materials, metaphors, and behaviors",
+            },
+            {
+                sectionTitle: "inspire",
+                subtitle: "Laurence - Everyday Whisper",
+                content: "Swift the daily idea can bring us into a brand-new world."
+            }
+
+        ]
+    },
 ];
 
 export default projects;

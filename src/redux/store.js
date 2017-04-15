@@ -10,7 +10,7 @@ import projects from '../data/projects';
 export const history = createHistory();
 const middleware = routerMiddleware(history);
 
-const initalData = {
+const initialData = {
     data: {
         projects
     }
@@ -19,7 +19,7 @@ const initalData = {
 
 let store = createStore(
     reducers,
-    initalData,
+    initialData,
     applyMiddleware(middleware)
 );
 

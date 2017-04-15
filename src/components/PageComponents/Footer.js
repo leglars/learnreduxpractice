@@ -14,13 +14,13 @@ const Footer = React.createClass({
 
     render: function() {
         return (
-            <div id="pfooter" >
+            <div className="pFooter" >
                 <div className="social-media">
                     <ul>
-                        <a href="#"><li><FaLinkedinSquare size={20} /></li></a>
-                        <a href="#"><li><MdEmail size={20} /> </li></a>
-                        <a href="#"><li><FaGithub size={20} /> </li></a>
-                        <a href="#"><li><FaFlickr size={20} /> </li></a>
+                        <li><a href="https://www.linkedin.com/in/nicholaszheng/" target="_blank"><FaLinkedinSquare size={24} /></a></li>
+                        <li><a href="mailto:leglars@gmail.com" target="_blank"><MdEmail size={24} /></a></li>
+                        <li><a href="https://github.com/leglars" target="_blank"><FaGithub size={24} /></a></li>
+                        <li><a href="https://www.flickr.com/photos/leglars/" target="_blank"><FaFlickr size={24} /></a></li>
                     </ul>
                 </div>
                 <div className="copyright">Copyright @ 2017 - Nicholas Zheng</div>
