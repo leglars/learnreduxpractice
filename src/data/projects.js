@@ -440,7 +440,9 @@ const projects = [
                         key: 2,
                     }
                 ],
-                content: [""],
+                content: [
+                "In this collection, I pick up four websites' snapshots designed and built in last two years. In each stage, I always tried my best to deliver what I constructed in mind and drew on the paper. Through those practices, I achieved a deep understanding of the primary front-end technical stack: HTML5, CSS3, jQuary, Bootstrap, and Sass; and I also had a taste with some modern front-end tools: Polymer, Angular1.X, Npm, and WebPack."
+                ],
 
             },
             {
@@ -517,7 +519,7 @@ const projects = [
                         alt: "News article"
                     },
                 ],
-                content: ["Swift the daily idea can bring us into a brand-new world."]
+                content: ["Swift the daily idea can bring us into a brand-new world. dafadfadsfadfadf ddddd ddddfdf ddfdfd"]
             },
             {
                 is: {imageWithText: true},

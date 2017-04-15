@@ -4,14 +4,26 @@
 exports.__esModule = true;
 
 import React from 'react';
+import Measure from 'react-measure';
 
 import ScrollableImageFrame from './ScrollableImageFrame';
 import ContentParagraph from './ContentParagraph';
 
-
-
 const ImageWithTextPage = React.createClass({
 
+    textFrameSize: {
+        width: -1,
+    },
+
+    setTextWidth: function() {
+        let imageFrameWidth;
+        if(this.state) {
+            imageFrameWidth = this.state.imageFrameDimensions.width;
+            const windowWidth = window.innerWidth;
+            const textFrameWidth = windowWidth - imageFrameWidth - 64 - 200;
+            this.textFrameSize = {width: textFrameWidth};
+        }
+    },
 
     render: function () {
         const {page, styleId} = this.props;
@@ -20,6 +32,9 @@ const ImageWithTextPage = React.createClass({
             width: "inherit",
             height: 450,
         };
+
+        //initial textFrameWidth
+        this.setTextWidth();
 
         return (
             <div className={styleId}>
@@ -32,18 +47,22 @@ const ImageWithTextPage = React.createClass({
                     </div>
                     <div className='subTitle'>{page.subtitle}</div>
                 </div>
-                <div className="container">
                     {
                         page.images.length > 1
                         ? (
-                            <div>
-                                <div className="eight columns">
-                                    <div className="imageFrame">
-                                        <ScrollableImageFrame images={page.images} size={size}/>
-                                    </div>
+                            <div className="imageWithTextPage clear">
+                                <div className="inlineColumn">
+                                    <Measure
+                                        onMeasure={(imageFrameDimensions) =>
+                                            this.setState({imageFrameDimensions})
+                                        }>
+                                        <div className="imageFrame">
+                                            <ScrollableImageFrame images={page.images} size={size} styleId={styleId}/>
+                                        </div>
+                                    </Measure>
                                 </div>
-                                <div className="four columns">
-                                    <div className="imageTextSpace">
+                                <div className="inlineColumn">
+                                    <div className="textFrame" style={this.textFrameSize}>
                                         <ContentParagraph content={page.content}/>
                                     </div>
                                 </div>
@@ -64,7 +83,6 @@ const ImageWithTextPage = React.createClass({
                             )
                     }
                 </div>
-            </div>
         )
     }
 });

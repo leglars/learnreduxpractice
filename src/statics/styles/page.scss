@@ -194,14 +194,25 @@ $column-gap: 40px !default;
 
 
 // ******************* image with text page *****************
-.theEnterPoint .imageTextSpace {
-  padding-right: 64px;
-  position: absolute;
-  bottom: 0;
+//.theEnterPoint .imageTextSpace {
+//  padding-right: 64px;
+//  position: absolute;
+//  bottom: 0;
+//}
+
+.imageWithTextPage {
+  .inlineColumn {
+    display: inline-block;
+    .textFrame {
+      padding-left: 64px;
+    }
+  }
 }
 
 .theEnterPoint {
+
   .four.columns {
+
     img {
 
       width: auto;
