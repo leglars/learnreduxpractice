@@ -16,80 +16,83 @@ $line-height: 24px !default;
 }
 
 // ***************   titlePage   **************** \\
-
-.theEnterPoint .titleHero>.hero{
-  display: inline-block;
-  &:nth-child(2) {
-    margin-left: 10px;
-  }
-}
-
-.theEnterPoint .titleHero>.hero>img {
-  height: 300px;
-}
-
-.theEnterPoint .titleHero {
-  height: 300px;
-}
-
 .we, .toy, .itk, .ct, .live, .xdj, .memory, .wdc, .cc{
   position: relative;
 }
 
-.theEnterPoint .title {
-  /* Whisper Effect: */
-  font-size: 72px;
-  font-weight: 600;
-  font-style: italic;
-  color: #FFFFFF;
-  line-height: 72px;
+.titlePage {
+  .titleHero {
+    height: 300px;
+  }
+  .titleHero>.hero {
+    display: inline-block;
+    &:nth-child(2) {
+      margin-left: 10px;
+    }
+    img {
+      height: 300px;
+    }
+  }
 
-  position: relative;
-  bottom: 4.5px;
-}
+  .whiteFrame {
+    position: absolute;
 
-.theEnterPoint .subTitle {
-  /* Use your body to lis: */
-  font-size: 24px;
-  font-weight: 600;
-  font-style: italic;
-  color: #888888;
-  line-height: 26px;
-  position: relative;
-  left: 24px;
-}
+    display: table;
+    left: 48px - 16px;
+    top: 300px - 64px;
+    padding: 16px;
+    background-color: #FFFFFF;
 
-.theEnterPoint .titleBackground {
-  float: left;
-  padding: 14px 120px 0 24px;
-  background-color: #757575;
+    .titleBackground {
+      .title {
+        font-size: 72px;
+        line-height: 72px;
+      }
+    }
+  }
 }
 
 .xdj .titleBackground {
   padding: 14px 32px 0 24px;
 }
 
-.theEnterPoint .whiteFrame {
-  position: absolute;
+// ******************* Title share ******************
 
-  display: table;
-  left: 48px - 16px;
-  top: 300px - 64px;
-  padding: 16px;
+.theEnterPoint {
+  .titleBackground {
+    float: left;
+    padding: 14px 120px 0 24px;
+    background-color: #757575;
 
-  background-color: #FFFFFF;
+    .title {
+      font-weight: 600;
+      font-style: italic;
+      color: #FFFFFF;
+      position: relative;
+      bottom: 4.5px;
+    }
+  }
+
+  .subTitle {
+    /* Use your body to lis: */
+    font-size: 24px;
+    font-weight: 600;
+    font-style: italic;
+    color: #888888;
+    line-height: 26px;
+    position: relative;
+    left: 24px;
+  }
 }
 
-.theEnterPoint .titleSpace {
-  margin-bottom: 24px;
-
+// *************** Section Title *****************
+.sectionTitle {
+  margin-bottom: 32px;
+  .title {
+    font-size: 64px;
+    line-height: 64px;
+  }
 }
-
-
-
-
-
-
 
 
 

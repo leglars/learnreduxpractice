@@ -8,6 +8,7 @@ import Measure from 'react-measure';
 
 import ScrollableImageFrame from './ScrollableImageFrame';
 import ContentParagraph from './ContentParagraph';
+import Title from './Title';
 
 const ImageWithTextPage = React.createClass({
 
@@ -15,9 +16,9 @@ const ImageWithTextPage = React.createClass({
         width: -1,
     },
 
-    setTextWidth: function() {
+    setTextWidth: function () {
         let imageFrameWidth;
-        if(this.state) {
+        if (this.state) {
             imageFrameWidth = this.state.imageFrameDimensions.width;
             const windowWidth = window.innerWidth;
             const textFrameWidth = windowWidth - imageFrameWidth - 64 - 200;
@@ -38,17 +39,11 @@ const ImageWithTextPage = React.createClass({
 
         return (
             <div className={styleId}>
-                <div className='titleSpace'>
-                    <div className='clear'>
-                        <div className='titleBackground'>
-                            <div className='title'>{page.sectionTitle}</div>
-                        </div>
-
-                    </div>
-                    <div className='subTitle'>{page.subtitle}</div>
-                </div>
-                    {
-                        page.images.length > 1
+                <Title title={page.sectionTitle}
+                       subtitle={page.subtitle}
+                />
+                {
+                    page.images.length > 1
                         ? (
                             <div className="imageWithTextPage clear">
                                 <div className="inlineColumn">
@@ -67,8 +62,8 @@ const ImageWithTextPage = React.createClass({
                                     </div>
                                 </div>
                             </div>
-                            )
-                            : (
+                        )
+                        : (
                             <div className="row">
                                 <div className="four columns relative">
                                     <div className="imageFrame">
@@ -80,9 +75,9 @@ const ImageWithTextPage = React.createClass({
                                 </div>
                             </div>
 
-                            )
-                    }
-                </div>
+                        )
+                }
+            </div>
         )
     }
 });

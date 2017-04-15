@@ -12,27 +12,29 @@ const TitlePage = React.createClass({
         const { page, styleId } = this.props;
         return (
             <div className={styleId}>
-                <div className='titleHero'>
-                    {page.heroImages.map((image, index) => (
-                        <div key={image.key} className='hero'>
-                            <img
-                                src={image.src}
-                                alt={image.alt} />
-                        </div>
-                    ))}
-                </div>
-                <div className='whiteFrame clear'>
-                    <div className='titleBackground'>
-                        <div className='title'>{page.title}</div>
-                    </div>
-                    <div className='subTitle'>{page.subtitle}</div>
-                </div>
-                <div className='content'>
-                    <div className='halfPage columnRight twoColumnCount column container'>
-                        {page.content.map((block, index) => (
-                            <div key={index} className="paragraph"
-                                dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(block)}}></div>
+                <div className="titlePage">
+                    <div className='titleHero'>
+                        {page.heroImages.map((image, index) => (
+                            <div key={image.key} className='hero'>
+                                <img
+                                    src={image.src}
+                                    alt={image.alt} />
+                            </div>
                         ))}
+                    </div>
+                    <div className='whiteFrame clear'>
+                        <div className='titleBackground'>
+                            <div className='title'>{page.title}</div>
+                        </div>
+                        <div className='subTitle'>{page.subtitle}</div>
+                    </div>
+                    <div className='content'>
+                        <div className='halfPage columnRight twoColumnCount column container'>
+                            {page.content.map((block, index) => (
+                                <div key={index} className="paragraph"
+                                     dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(block)}}></div>
+                            ))}
+                        </div>
                     </div>
                 </div>
             </div>

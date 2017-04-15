@@ -9,6 +9,7 @@ exports.__esModule = true;
 import React from 'react';
 
 import ContentParagraph from './ContentParagraph';
+import Title from './Title';
 
 const ColumnsPage = React.createClass({
     render: function () {
@@ -16,15 +17,9 @@ const ColumnsPage = React.createClass({
         const { page, styleId } = this.props;
         return (
             <div className={styleId}>
-                <div className='titleSpace'>
-                    <div className='clear'>
-                        <div className='titleBackground'>
-                            <div className='title'>{page.sectionTitle}</div>
-                        </div>
-
-                    </div>
-                    <div className='subTitle'>{page.subtitle}</div>
-                </div>
+                <Title title={page.sectionTitle}
+                       subtitle={page.subtitle}
+                />
                 <div className="row columnsPage">
                     {
                         page.content.length === 4
@@ -36,7 +31,7 @@ const ColumnsPage = React.createClass({
                             ))
                             : (<div className="fullpage fourColumnCount column container">
                                         {page.content.map((block, index) => (
-                                            <span>
+                                            <span key={index}>
                                                 <img src={block.image.src} alt={block.image.alt} />
                                                 <ContentParagraph content={block.text}/>
                                                 <br />
