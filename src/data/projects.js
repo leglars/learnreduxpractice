@@ -459,7 +459,9 @@ const projects = [
                         alt: "About page & Skill list"
                     }
                 ],
-                content: ["Swift the daily idea can bring us into a brand-new world."]
+                content: [
+                'I designed and built this website in serval hours because its time was short. With the simple structure and typography layout, it reached the aim of displaying content - course conclusion and reflection. A point of this site which is worthy of mentioning is that the skill list has a CSS animation to show the skill bar increment when the "about" page is rendered.'
+                ]
             },
             {
                 is: {imageWithText: true},
@@ -495,7 +497,9 @@ const projects = [
                         alt: "contact"
                     },
                 ],
-                content: ["Swift the daily idea can bring us into a brand-new world."]
+                content: [
+                'This work is a redesign project. I picked up a web site of a small training company called "Infinite Leaders" as a virtual client. After analyzing their business and site structure, I reorganized their information structure to make sure the site can provide information clearly, and then, redesigned the basic VIS (logo and primary color) and the whole website making it look professional. <a href="portfolio/src/statics/file/Final T02-Jacaranda.pdf" target="_blank"><span class="reference">Here is the document</span></a> record the whole redesign process.'
+                ]
             },
             {
                 is: {imageWithText: true},
@@ -519,7 +523,9 @@ const projects = [
                         alt: "News article"
                     },
                 ],
-                content: ["Swift the daily idea can bring us into a brand-new world. dafadfadsfadfadf ddddd ddddfdf ddfdfd"]
+                content: [
+                'It has been introduced comprehensively under "In The Know" project. When I built this prototype, the Polymer 1.0 just released. I decided to attempt Material Design in this site. It was also the first time for me to touch with many concepts like Bower, Web Component, shadow DOM, hook, data binding, etc. Besides those technical improvements, I gained an in-depth understanding of material design and the usage on responsive context.'
+                ]
             },
             {
                 is: {imageWithText: true},
@@ -543,7 +549,9 @@ const projects = [
                         alt: "Confirmation page"
                     },
                 ],
-                content: ["Swift the daily idea can bring us into a brand-new world."]
+                content: [
+                'I have to say this site has a bad design. It is more like an experiment. We put different interesting things into it, such as semantic UI, CSS drawing, HTML media and few Angular. The real important parts of this demo are the role & story design, classical game interface,  and the detective game concept.'
+                ]
             },
 
         ]
