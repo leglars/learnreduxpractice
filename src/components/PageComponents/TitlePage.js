@@ -29,7 +29,7 @@ const TitlePage = React.createClass({
                         </div>
                         <div className='subTitle'>{page.subtitle}</div>
                     </div>
-                    <div className='text'>
+                    <div className='text clear'>
                         <div className='halfPage columnRight twoColumnCount column container'>
                             <ContentParagraph content={page.content}/>
                         </div>

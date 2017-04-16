@@ -25,17 +25,25 @@ const ColumnsPage = React.createClass({
                         page.content.length === 4
                             ? page.content.map((block, index) => (
                                 <div key={block.key} className="three columns">
-                                    <img src={block.image.src} alt={block.image.alt} />
+                                    {
+                                        block.image
+                                            ? <img src={block.image.src} alt={block.image.alt} />
+                                            : <div></div>
+                                    }
                                     <ContentParagraph content={block.text}/>
                                 </div>
                             ))
                             : (<div className="fullpage fourColumnCount column container">
                                         {page.content.map((block, index) => (
-                                            <span key={index}>
-                                                <img src={block.image.src} alt={block.image.alt} />
+                                            <div key={index}>
+                                                {
+                                                    block.image
+                                                        ? <img src={block.image.src} alt={block.image.alt} />
+                                                        : <div></div>
+                                                }
                                                 <ContentParagraph content={block.text}/>
                                                 <br />
-                                            </span>
+                                            </div>
                                     ))}
                                 </div>)
 

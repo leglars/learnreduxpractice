@@ -119,13 +119,15 @@ $column-gap: 40px !default;
 .theEnterPoint .content {
   font-size: 14.83px;
   font-weight: 200;
-  height: inherit;
+  //height: inherit;
   color: $content-color;
   line-height: $line-height;
   text-align: left;
+
 }
 
 .theEnterPoint .paragraph {
+
   text-indent: 18px;
   margin-bottom: $line-height / 2;
   &:last-child {
@@ -188,15 +190,15 @@ $column-gap: 40px !default;
 
 .theEnterPoint .row  {
   width: 100%;
-}
+  img {
+    width: 100%;
+  }
+  .three.columns {
+    .content {
+      margin-top: 24px;
+    }
+  }
 
-.theEnterPoint .row img{
-  width: 100%;
-
-}
-
-.theEnterPoint .row .content {
-  margin-top: 24px;
 }
 
 
