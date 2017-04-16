@@ -1,5 +1,13 @@
+@import "./base/variables";
+
 #portfolio {
-  padding: 0 100px;
+  padding: 0 50px;
+}
+
+@media (#{$bp-larger-than-desktophd}) {
+  #portfolio {
+    padding: 0 100px;
+  }
 }
 
 #portfolioContainer {

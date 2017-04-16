@@ -17,21 +17,40 @@ const ImageWithTextPage = React.createClass({
     },
 
     defaultImageSize: {
-        width: -1,
-        height: -1
+        width: 680,
+        height: 450
     },
 
     setElementWidth: function () {
         let imageFrameWidth;
         if (this.state) {
             imageFrameWidth = this.state.imageFrameDimensions.width;
-            const windowWidth = window.innerWidth;
-            const textFrameWidth = windowWidth - imageFrameWidth - 64 - 200;
-            this.textFrameSize = {width: textFrameWidth};
-            this.defaultImageSize={
-                width: 2/3 * (windowWidth - 200),
-                height: 450
-            };
+            const viewWidth = this.state.viewDimensions.width;
+            const textFrameWidth = viewWidth - imageFrameWidth - 64;
+            this.textFrameSize = {width: textFrameWidth - 1};
+            if (900 <= viewWidth < 1000) {
+                this.defaultImageSize = {
+                    width: 550,
+                    height: 410
+                };
+            }
+            if (viewWidth < 900) {
+                this.defaultImageSize = {
+                    width: viewWidth,
+                    height: 400
+                };
+                this.textFrameSize = {
+                    width: viewWidth,
+                };
+            }
+            if ( viewWidth >= 1000 ){
+                this.defaultImageSize = {
+                    width: 680,
+                    height: 450
+                };
+            }
+            console.log(viewWidth, textFrameWidth, this.defaultImageSize.width);
+
         }
     },
 
@@ -41,7 +60,12 @@ const ImageWithTextPage = React.createClass({
         //initial textFrameWidth
         this.setElementWidth();
 
+
+
         return (
+            <Measure onMeasure={(viewDimensions) =>
+                this.setState({viewDimensions})
+            }>
             <div className={styleId}>
                 <Title title={page.sectionTitle}
                        subtitle={page.subtitle}
@@ -82,6 +106,7 @@ const ImageWithTextPage = React.createClass({
                         )
                 }
             </div>
+            </Measure>
         )
     }
 });

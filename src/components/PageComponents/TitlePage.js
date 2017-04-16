@@ -4,7 +4,8 @@
 exports.__esModule = true;
 
 import React from 'react';
-import DOMPurify from 'dompurify';
+
+import ContentParagraph from './ContentParagraph';
 
 const TitlePage = React.createClass({
     render: function () {
@@ -28,12 +29,9 @@ const TitlePage = React.createClass({
                         </div>
                         <div className='subTitle'>{page.subtitle}</div>
                     </div>
-                    <div className='content'>
+                    <div className='text'>
                         <div className='halfPage columnRight twoColumnCount column container'>
-                            {page.content.map((block, index) => (
-                                <div key={index} className="paragraph"
-                                     dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(block)}}></div>
-                            ))}
+                            <ContentParagraph content={page.content}/>
                         </div>
                     </div>
                 </div>

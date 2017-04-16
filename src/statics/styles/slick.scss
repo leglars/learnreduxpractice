@@ -1,5 +1,7 @@
 /* Slider */
 
+@import './base/variables';
+
 .slick-slider {
     position: relative;
     display: block;
@@ -45,10 +47,20 @@
             .slick-slide {
                 height: inherit;
                 position: relative;
+                overflow-x: scroll;
                 overflow-y: scroll;
 
                 img {
-                    width: 100%;
+                    width: 200%;
+                }
+            }
+
+            @media (#{$bp-larger-than-phablet}) {
+                .slick-slide {
+                    overflow-x: hidden;
+                    img {
+                        width: 100%;
+                    }
                 }
             }
         }

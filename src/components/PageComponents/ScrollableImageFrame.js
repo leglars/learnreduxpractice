@@ -32,6 +32,7 @@ const ScrollableImagePage = React.createClass({
                                          style={{
                                              width: 800,
                                              height: 46,
+                                             marginBottom: -4
                                          }}/>
                                     <SwitchableImageFrame images={images} {...newSize}/>
                                 </div>
