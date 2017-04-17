@@ -37,9 +37,13 @@ const SwitchableImageFrame = React.createClass({
                 <Slider {...settings}>
                     {images.map((image, index) => (
                         <div key={index}>
-                            <img src={image.src}
-                                 alt={image.alt}
-                                 />
+                            {
+                                !image.isVideo
+                                    ? <img src={image.src}
+                                           alt={image.alt}/>
+                                    : <iframe src={image.src} frameborder="0" allowfullscreen></iframe>
+                            }
+
                         </div>
                     ))}
                 </Slider>

@@ -21,12 +21,12 @@ const projects = [
                 subtitle: "Use your body to listening the world",
                 heroImages: [
                     {
-                        src: 'https://github.com/leglars/portfolio/blob/master/src/statics/images/we/whisper_effect_title_hero_1.jpg?raw=true',
+                        src: 'https://c1.staticflickr.com/3/2857/33280229143_2df4368ab4.jpg',
                         alt: 'we exhibition',
                         key: 1,
                     },
                     {
-                        src: 'https://github.com/leglars/portfolio/blob/master/src/statics/images/we/whisper_effect_title_hero_2.jpg?raw=true',
+                        src: 'https://c1.staticflickr.com/4/3931/33280228693_24aa365a2a.jpg',
                         alt: 'we exhibition',
                         key: 2,
                     }
@@ -45,7 +45,7 @@ const projects = [
                     {
                         key: 1,
                         image: {
-                            src: 'https://github.com/leglars/portfolio/blob/master/src/statics/images/we/whisper_effect_inspire_everydaywhisper.jpg?raw=true',
+                            src: 'https://c1.staticflickr.com/3/2812/33707050880_9ca5872441.jpg',
                             alt: "Everyday Whisper"
                         },
                         text: ["In APT 8, <a href='https://www.qagoma.qld.gov.au/whats-on/exhibitions/apt8/artists/lawrence-english'><span class='reference'>Lawrence English took a sound sculpture called 'Everyday Whisper'</span></a>. Visitors, as parts of it, can provide a piece of voice processed like a whisper. The speaker array plays several pieces of whispers at the same time, which can give viewers wonderful acoustic experiences. This concept expands our understanding of the context of sound and encourages us to exploit the possibility of sound around our life."]
@@ -53,7 +53,7 @@ const projects = [
                     {
                         key: 2,
                         image: {
-                            src: 'https://github.com/leglars/portfolio/blob/master/src/statics/images/we/whisper_effect_inspire_listentree.jpg?raw=true',
+                            src: 'https://c1.staticflickr.com/3/2809/33280229853_b39ff6a513.jpg',
                             alt: "Listen Tree"
                         },
                         text: ["<a href=''><span class='reference'>Listen Tree</span></a> uses the feature that solid objects can conduct sound waves to the tree in order to embed audio to the surrounding environment. From this project, we realised that the core of bone conduction could change the way people perceive sound, and from this, people can get sound messages by an unexpected approach."]
@@ -61,7 +61,7 @@ const projects = [
                     {
                         key: 3,
                         image: {
-                            src: 'https://github.com/leglars/portfolio/blob/master/src/statics/images/we/whisper_effect_inspire_tellYouSecretToaTreeHole.jpg?raw=true',
+                            src: 'https://c1.staticflickr.com/3/2911/33280229163_844d099829.jpg',
                             alt: "Tell your secret to a tree hole"
                         },
                         text: ["The folktale, <a href='https://medium.com/@mowen/cambodia-tell-a-tree-hole-your-secret-f661db9ab796'><span class='reference'>'Tell a secret to a tree hole.'</span></a>, has many version. It is said that it was originally from Ireland called <a href='http://spellbinders.org/story/the-king-with-horses-ears/'><span class='reference'>“The King With The Horse’s Ears”</span></a>. Combined with bone conduction, we wish to create a private space in public context so that people can release themselves by talking. Also, a folktale as background can take audience into the installation in a short time, like they are a role in story."]
@@ -69,7 +69,7 @@ const projects = [
                     {
                         key: 4,
                         image: {
-                            src: 'https://github.com/leglars/portfolio/blob/master/src/statics/images/we/whisper_effect_inspire_odcc.jpg?raw=true',
+                            src: 'https://c1.staticflickr.com/3/2891/33280229443_06b9ab0ce1.jpg',
                             alt: "Talking Window"
                         },
                         text: ["The design group noticed that people would like to lean on the window when they’re tired on public transportation. Therefore, they created the <a href='https://youtu.be/pOnySNREmj0'><span class='reference'>'Talking Window'</span></a> to send some messages through the window to passengers. This project shows privacy is a part of bone conduction. So audience sometimes has an illusion that he is the chosen one."]
@@ -77,14 +77,178 @@ const projects = [
                 ]
             },
             {
-                sectionTitle: "inspire",
-                is: {
-
+                sectionTitle: "Ideate",
+                is: {columns: true},
+                subtitle: '"Responsive Environment" with human value',
+                content: [
+                    {
+                        key: 1,
+                        image:{
+                            src:"https://c1.staticflickr.com/4/3936/34052177386_12b8a19528_n.jpg",
+                            alt: "RE diagram"
+                        },
+                        text:[
+                        "<h3>Responsive Environment</h3>",
+                        "Based on studio’s process, the initial idea comes from a subtopic - Responsive Environment. According to MIT Media Lab, RE can seem as augmenting and mediating human experience, interaction and perception with sensor networks. So that we summed up a simple framework as our understanding and a guide to enhance the user experience.",
+                        "<h3>Other Concepts</h3>",
+                        "To raise the human value of exploring the desires of people from a range of age groups, we generated two concepts. ",
+                    ],
                 },
-                subtitle: "Laurence - Everyday Whisper",
-                content: "Swift the daily idea can bring us into a brand-new world."
+                {
+                    key: 2,
+                    image:{
+                        src:"https://c1.staticflickr.com/4/3954/34092678085_51401c3f6d_n.jpg",
+                        alt: "Huggable sculpture"
+                    },
+                    text:[
+                "The Huggable sculpture hopes reflect how powerful it is to be able to give, by hugging, and receive, by listening, with sharing hopes/dreams between strangers, which provides insight across generations."
+                ]
+                },
+                {
+                    key: 3,
+                    image:{
+                        src:"https://c1.staticflickr.com/3/2861/34052374716_a88becf11c_n.jpg",
+                        alt: "Pillow talk"
+                    },
+                    text:[
+                "Pillow Talk aims to empathy visitors’ childhood memories that lay on bed with careful and listen to late-night broadcast in secret. A vertical bed is set up as the installation. Visitors can lean on it as lay on a bed. Through a pillow, they can hear something and response the questions.",
+                "However, restricted by cost and time, we can’t build an installation above two. We followed the folktale’s framework, make a cardboard tree."
+                    ]
+                },
+                ]
 
-            }
+            },
+            {
+                sectionTitle: "Storyboard",
+                is: {imageWithText: true, singleImage: false},
+                subtitle: "Tell the secret to a treehole",
+                images: [
+                    {
+                        isVideo: true,
+                        src:"https://www.youtube.com/embed/7HvsA6K81Bw"
+                    },
+                    {
+                        src:"https://c1.staticflickr.com/3/2807/33935688112_9e6f7d3c19_c.jpg",
+                        alt:"king & hairdresser"
+                    },
+                    {
+                        src:"https://c1.staticflickr.com/3/2846/34052108276_2d22559869_c.jpg",
+                        alt:"Hairdresser"
+                    },
+                    {
+                        src:"https://c1.staticflickr.com/3/2911/34053307556_751005ca1e_c.jpg",
+                        alt:"tree"
+                    },
+                    {
+                        src:"https://c1.staticflickr.com/3/2888/34052110506_6fa46058f9_c.jpg",
+                        alt:"sally"
+                    },
+                    {
+                        src:"https://c1.staticflickr.com/3/2878/33962663921_f54e5b5af3_c.jpg",
+                        alt:"Listening tree"
+                    },
+                    
+                ],
+                content: [
+                "In the previous conceptual design, some concept sketches are being present, which seems like the visual representativeness of this project. Therefore, when the team starts to illustrate the storyboard, there are more lovely roles and setting being drawn out.",
+                "Since we use the folktale as the background of the project, it is our storyboard script naturally. Then we decided to deliver a carton-style puppetoon to fit the script, which is funny and attractive."
+                ]
+            },
+            {
+                sectionTitle: "Prototyping",
+                is: {imageWithText: true, singleImage: false},
+                subtitle: "Physical building",
+                images: [
+                    {
+                        src:"https://c1.staticflickr.com/4/3953/33964576241_de0b763376_c.jpg",
+                        alt:"Electronical protoptye"
+                    },
+                    {
+                        src:"https://c1.staticflickr.com/4/3937/33710057080_22c3315e88_c.jpg",
+                        alt:"soldering"
+                    },
+                    {
+                        src:"https://c1.staticflickr.com/3/2845/34054106226_eb2625b602.jpg",
+                        alt:"bear"
+                    },
+                    {
+                        src:"https://c1.staticflickr.com/3/2869/34094733335_2c9a869c7b_c.jpg",
+                        alt:"drum"
+                    },
+                    {
+                        src:"https://c1.staticflickr.com/3/2900/34054105476_5002805be2_c.jpg",
+                        alt:"drum2"
+                    },
+                    {
+                        src:"https://c1.staticflickr.com/3/2907/33710061430_d4e6728249_c.jpg",
+                        alt:"Physical tree"
+                    },
+                    {
+                        src:"https://c1.staticflickr.com/3/2897/33937768722_ab075ca0b5_c.jpg",
+                        alt:"Testing material"
+                    },
+                    {
+                        src:"https://c1.staticflickr.com/3/2878/33962663921_f54e5b5af3_c.jpg",
+                        alt:"carton tree"
+                    },
+                ],
+                content: [
+                "We found <a href='https://au.pinterest.com/pin/433964114069452451/'><span class='reference'> a tutorial on Pinterest.</span></a> It taught us how to make a cardboard truck. We took serval weeks to build our tree step by step.",
+'I took apart three speakers and took out their amplifier unit to drive the transducer. The sensor was put on the top of tree hole so that the forehead of audience can against on it when they "talk to treehole". Under the tree hole, there is a distance sensor, so the program knows whether a user is approaching.',
+"Due to the installation is a tree, I preferred no physical interaction method, like buttons and screen. As a result, I proposed using light to give user feedback, which was inspired by glow worm. Then, we conducted a body storming to stimulate the interaction process and summarized seven different light patterns covering all system status."
+                ]
+            },
+            {
+                sectionTitle: "Exhibition",
+                is: {imageWithText: true, singleImage: false},
+                subtitle: "The happy hours",
+                images: [
+                    {
+                        src:"https://c1.staticflickr.com/3/2829/34092680615_90a759ab60_c.jpg",
+                        alt:"family photo"
+                    },
+                    {
+                        src:"https://c1.staticflickr.com/3/2879/33284463753_d3e6a959a4_c.jpg",
+                        alt:"Demo"
+                    },
+                    {
+                        src:"https://c1.staticflickr.com/3/2807/33711384210_74bb7c172c_c.jpg",
+                        alt:"litening"
+                    },
+                    {
+                        src:"https://c1.staticflickr.com/4/3956/33711382860_332b3b3179_c.jpg",
+                        alt:"litening2"
+                    },
+                    {
+                        src:"https://c1.staticflickr.com/3/2910/33284454123_a2a479d330_c.jpg",
+                        alt:"tree1"
+                    },
+                    {
+                        src:"https://c1.staticflickr.com/3/2892/33939098442_baf170467f_c.jpg",
+                        alt:"tree2"
+                    },
+                    {
+                        src:"https://c1.staticflickr.com/3/2831/33253642564_08f83c7493_c.jpg",
+                        alt:"tree3"
+                    },
+                    {
+                        src:"https://c1.staticflickr.com/3/2849/33939100512_c4d7a42c24_c.jpg",
+                        alt:"introduce1"
+                    },
+                    {
+                        src:"https://c1.staticflickr.com/3/2838/33253644854_555ff22a5b_c.jpg",
+                        alt:"introduce2"
+                    },
+                    {
+                        src:"https://c1.staticflickr.com/3/2857/33962666781_364dc35553_c.jpg",
+                        alt:"Everyone"
+                    },
+                ],
+                content: [
+                "In the Exhibition, people like the tree because the light makes the tree look shining. The color-change tree holes catch many people's eyes, especially kids'. They are curious about what is in the tree hole. But, since we aim to deliver a novel and private communication experience, the interaction seems hidden, if they didn't know the tree-hole folktale before. ",
+                "To introduce our strange concept and technology to people, we design and set up a tutorial-like experience place for them - watching the video with covering ear by hands to listening to the narrative. However, in the peak time, there are so many people coming that most of them can't follow our default process to experience our project, which make some of them feel confused that how the tree works."
+                ]
+            },
 
         ]
     },
@@ -155,8 +319,7 @@ const projects = [
                         text: [
                         "<h3>Methodology</h3>",
                             "We apply single-case research framework and follow the reversal design (or A-B-A design) to construct the evaluation. We planned to invite ten people (participant) from that aged care facility, as well as their nominated families (contact) to join this 6-week project.",
-                    "<ul><li><b>Phase A: baseline, all people follow their normal daily routine</b></li>" +
-                    "<li><b>Phase B: intervention, a tablet running ToY is placed in participant’s suite.</b></li></ul>"
+                    "<ul><li><b>Phase A: baseline, all people follow their normal daily routine</b></li><li><b>Phase B: intervention, a tablet running ToY is placed in participant’s suite.</b></li></ul>"
                         ]
                     },
                     {
