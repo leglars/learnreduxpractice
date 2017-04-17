@@ -25,6 +25,7 @@ const SwitchableImageFrame = React.createClass({
         const settings = this.props.settings || {
                 dots: true,
                 speed: 500,
+                lazyLoad: true,
                 slidesToScroll: 1,
                 slidesToShow: 1,
                 nextArrow: <img src={right} alt="next"/>,

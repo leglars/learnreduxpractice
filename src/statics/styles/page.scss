@@ -124,43 +124,46 @@ $column-gap: 40px !default;
   line-height: $line-height;
   text-align: left;
 
-}
-
-.theEnterPoint .paragraph {
-
-  text-indent: 18px;
-  margin-bottom: $line-height / 2;
-  &:last-child {
-    margin-bottom: 0;
-  }
-  h3 {
-    font-size: 18px;
-    text-indent: 0;
-    margin-bottom: 0;
-  }
-
-  ul {
-    list-style: none;
-
-    li {
-      margin-bottom: 4px;
-      list-style: none;
-      display: block;
-      text-indent: 12px;
-    }
-  }
-}
-
-.theEnterPoint .xdj .columnsPage {
-  .container {
-    width: 95%;
-  }
   .paragraph {
+    text-indent: 18px;
+    margin-bottom: $line-height / 2;
     &:last-child {
-      margin-bottom: 64px;
+      margin-bottom: 0;
+    }
+    h3 {
+      font-size: 18px;
+      font-weight: 500;
+      text-indent: 0;
+      margin-bottom: 0;
+      margin-top: 24px;
+      color: $content-color;
+    }
+    h3.startLine {
+      margin-top: 0;
+    }
+    b {
+      color: lighten($content-color, 30%);
+      font-style: italic;
+      line-height: $line-height / 2;
+    }
+    b.secondary {
+      font-weight: 400;
+      font-style: normal;
+      color: lighten($content-color, 20%);
+    }
+
+    ul {
+      list-style: none;
+
+      li {
+        margin-bottom: 2px;
+        list-style: none;
+        display: block;
+        text-indent: 12px;
+        font-style: italic;
+      }
     }
   }
-
 }
 
 .theEnterPoint .columnRight {
@@ -196,6 +199,18 @@ $column-gap: 40px !default;
   .three.columns {
     .content {
       margin-top: 24px;
+    }
+  }
+
+}
+
+.xdj .columnsPage {
+  .container {
+    width: 95%;
+  }
+  .paragraph {
+    &:last-child {
+      margin-bottom: 64px;
     }
   }
 
@@ -251,29 +266,49 @@ $column-gap: 40px !default;
 
 
 .theEnterPoint {
-
-  .four.columns {
-
-    img {
-
+    .image-frame {
+      position: relative;
+      float: left;
       width: auto;
-      height: 480px;
-      &:after {
-        clear: both;
-        display: table;
+      img {
+      }
+      .textToBottom {
+        max-width: 500px;
+        width: 100%;
+        margin-top: 24px;
       }
     }
+
+  @media (#{$bp-larger-than-desktop}) {
+    .image-frame {
+      .textToBottom {
+        max-width: 400px;
+        position: absolute;
+        width: 70%;
+        left: 110%;
+        bottom: 10%;
+      }
+    }
+
   }
 
-  .textToBottom {
-    width: 90%;
-    position: absolute;
-    left: 120%;
-    bottom: 20%;
-    &:after {
-      clear: both;
-      display: block;
-      content: ' ';
+  @media (#{$bp-larger-than-desktophd}) {
+    .image-frame {
+
+      img {
+      }
+      .textToBottom {
+        max-width: 500px;
+        min-width: 300px;
+        width: 90%;
+        left: 120%;
+        &:after {
+          clear: both;
+          display: block;
+          content: ' ';
+        }
+      }
     }
+
   }
 }

@@ -5,12 +5,25 @@ exports.__esModule = true;
 
 import React from 'react';
 import Measure from 'react-measure';
+import classNames from 'classnames';
 
 import ScrollableImageFrame from './ScrollableImageFrame';
 import ContentParagraph from './ContentParagraph';
 import Title from './Title';
 
 const ImageWithTextPage = React.createClass({
+    getInitialState: function() {
+        return {
+            imageFrameDimensions: {
+                width: -1,
+            },
+            viewDimensions: {
+                width: -1
+            }
+        };
+    },
+
+    viewWidth: -1,
 
     textFrameSize: {
         width: -1,
@@ -23,9 +36,12 @@ const ImageWithTextPage = React.createClass({
 
     setElementWidth: function () {
         let imageFrameWidth;
+        const {imageFrameDimensions, viewDimensions} = this.state;
+        let {viewWidth} = this;
+
         if (this.state) {
-            imageFrameWidth = this.state.imageFrameDimensions.width;
-            const viewWidth = this.state.viewDimensions.width;
+            imageFrameWidth = imageFrameDimensions.width;
+            viewWidth = viewDimensions.width;
             const textFrameWidth = viewWidth - imageFrameWidth - 64;
             this.textFrameSize = {width: textFrameWidth - 1};
             if (900 <= viewWidth < 1000) {
@@ -61,7 +77,6 @@ const ImageWithTextPage = React.createClass({
         this.setElementWidth();
 
 
-
         return (
             <Measure onMeasure={(viewDimensions) =>
                 this.setState({viewDimensions})
@@ -71,7 +86,7 @@ const ImageWithTextPage = React.createClass({
                        subtitle={page.subtitle}
                 />
                 {
-                    page.images.length > 1
+                    !page.is.singleImage || page.images.length > 1
                         ? (
                             <div className="imageWithTextPage clear">
                                 <div className="inlineColumn">
@@ -92,16 +107,16 @@ const ImageWithTextPage = React.createClass({
                             </div>
                         )
                         : (
-                            <div className="row">
-                                <div className="four columns relative">
-                                    <div className="imageFrame">
-                                        <img src={page.images[0].src} alt={page.images[0].alt}/>
+                                    <div className="image-frame">
+
+                                            <img src={page.images[0].src} alt={page.images[0].alt}
+                                                style={page.images[0].size}/>
+
+
                                         <div className="textToBottom">
                                             <ContentParagraph content={page.content}/>
                                         </div>
-                                    </div>
                                 </div>
-                            </div>
 
                         )
                 }

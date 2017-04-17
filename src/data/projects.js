@@ -107,13 +107,13 @@ const projects = [
                 subtitle: "Enhance family connection by just one touch",
                 heroImages: [
                     {
-                        src: 'https://github.com/leglars/portfolio/blob/master/src/statics/images/we/whisper_effect_title_hero_1.jpg?raw=true',
+                        src: 'https://c1.staticflickr.com/3/2875/33686731260_44e7c438c7.jpg',
                         alt: 'we exhibition',
                         key: 1,
                     },
                     {
-                        src: 'https://github.com/leglars/portfolio/blob/master/src/statics/images/we/whisper_effect_title_hero_2.jpg?raw=true',
-                        alt: 'we exhibition',
+                        src: 'https://c1.staticflickr.com/3/2882/33915010022_58cbc56ba3.jpg',
+                        alt: 'interview',
                         key: 2,
                     }
                 ],
@@ -124,8 +124,18 @@ const projects = [
             },
             {
                 sectionTitle: "History",
-                is: {},
+                is: {imageWithText: true},
                 subtitle: "",
+                images: [
+                    {
+                        src: "https://c1.staticflickr.com/3/2949/33930355672_958216fe50_c.jpg",
+                        alt: "Mika Version"
+                    },
+                    {
+                        src: "https://c1.staticflickr.com/3/2832/33245159124_94278f7b1a_c.jpg",
+                        alt: "Lin Version"
+                    },
+                ],
                 content: [
                     "This initial idea of “Thinking of You” comes from Mika in 2008. She explored that use a touch screen based digital photo frame to foster the aging in place. After a wide range of interviews, observation and prototype presenting, she realized that a message simple as “I am Thinking of You” had a positive response from the receiver activating an active social connection, and considered that the combination of texting message and photo displaying has the potential benefit for enhancing people connections.",
                     "In 2014, Lin continued her work, and developed a workable web app. Compared with Mika’s version, Lin’s design is more like a photo album app. Her study proved that the more active social connections contribute to the reducing social isolations level amongst younger generation."
@@ -133,33 +143,128 @@ const projects = [
             },
             {
                 sectionTitle: "Evaluation",
-                is: {},
-                subtitle: "",
+                is: {columns: true},
+                subtitle: "Methodology & Implementation",
                 content: [
-                    "We apply single-case research framework and follow the reversal design (or A-B-A design) to construct the evaluation. We planned to invite ten people (participant) from that aged care facility, as well as their nominated families (contact) to join this 6-week project.",
-                    "<ul><li>Phase A: baseline, all people follow their normal daily routine</li>" +
-                    "<li>Phase B: intervention, a tablet running ToY is placed in participant’s suite.</li></ul>"
-                ]
-            },
-            {
-                sectionTitle: "Data Collection",
-                is: {imageWithText: true},
-                subtitle: "",
-                content: [
-                    "At the end of each phase, we hold a semi-structure interview with the participant to measure their social status and social satisfaction; besides, A daily dairy message sends to each contact to track participant’s social connections during the whole evaluation. By comparing with data of each phase, the difference helps to understand the impact of ToY. ",
-                    "By the way, all participants’ operations on the app are recorded. It allows us to explore the pattern of behaviors."
-
-                ]
-            },
-            {
-                sectionTitle: "Implementation",
-                is: {},
-                subtitle: "",
-                content: [
-                    "In my research, the target audience is aging generation living in a nursing home with a low recognition capacity. Therefore, the functionality and interaction should be as simple as possible so that they can complete the evaluation without problem.",
+                    {
+                        key: 1,
+                        image: {
+                            src: "https://c1.staticflickr.com/3/2884/33245267964_fec9caac7e_b.jpg",
+                        alt: "Evaluation Phase Diagram",
+                        },
+                        text: [
+                        "<h3>Methodology</h3>",
+                            "We apply single-case research framework and follow the reversal design (or A-B-A design) to construct the evaluation. We planned to invite ten people (participant) from that aged care facility, as well as their nominated families (contact) to join this 6-week project.",
+                    "<ul><li><b>Phase A: baseline, all people follow their normal daily routine</b></li>" +
+                    "<li><b>Phase B: intervention, a tablet running ToY is placed in participant’s suite.</b></li></ul>"
+                        ]
+                    },
+                    {
+                        key: 2,
+                        image: {
+                            src: "https://c1.staticflickr.com/3/2849/33932346532_d51f3faba6_z.jpg",
+                            alt: "ToY Sturcture"
+                        },
+                        text: [
+                        "<h3>Implementation</h3>",
+                            "In my research, the target audience is aging generation living in a nursing home with a low recognition capacity. Therefore, the functionality and interaction should be as simple as possible so that they can complete the evaluation without problem.",
                     "The way we collect social connections data (daily message dairy) caused each participant couldn’t nominate too many contact. Considering the team’s management ability, we decided that each participant could nominate 4 contacts at most. Meanwhile, it is convenient for overlaying all contacts’ photos within one screen. So, participants not need the others interaction with the device but touch the screen when they were thinking someone.",
                     "To record all operations of participants, the app should integrate an event recording module.",
                     "The new “Thinking of You” consists of three parts: app itself, data recording and messaging. I apply Flask to build and manage the logic of the app; use Firebase to store, record, and monitor the data; employ Polivo as messaging provider. The whole app sets up on the RESTful structure."
+                        ]
+                    }
+                ]
+            },
+            {
+                sectionTitle: "Evaluation",
+                is: {imageWithText: true},
+                subtitle: "Data Collection",
+                images: [
+                    {
+                        src: "https://c1.staticflickr.com/4/3933/33705226350_640ac18a63_o.jpg",
+                        alt: "Interview"
+                    },
+                    {
+                        src: "https://c1.staticflickr.com/3/2907/33278203343_3a2b624a91_o.jpg",
+                        alt: "Data Snapshot"
+                    },
+                    {
+                        src: "https://c1.staticflickr.com/3/2849/33932346532_d51f3faba6_z.jpg",
+                        alt: "ToY Sturcture"
+                    },
+                    {
+                        src: "https://c1.staticflickr.com/3/2884/33245267964_9e9e9f61bb_o.jpg",
+                        alt: "Phase Diagram"
+                    },
+                ],
+                content: [
+                    "<h3>Data Collection</h3>",
+                    "At the end of each phase, we hold a semi-structure interview with the participant to measure their social status and social satisfaction; besides, A daily dairy message sends to each contact to track participant’s social connections during the whole evaluation. By comparing with data of each phase, the difference helps to understand the impact of ToY. ",
+                    "By the way, all participants’ operations on the app are recorded. It allows us to explore the pattern of behaviors."
+                ]
+            },
+            {
+                sectionTitle: "Findings",
+                is: {
+                    imageWithText: true,
+                    singleImage: false
+                },
+                subtitle: "",
+                images: [
+                    {
+                        src: "https://c1.staticflickr.com/3/2948/34049212976_4138027cba_c.jpg",
+                        alt: "Evaluation Phase Diagram",
+                    }
+                        ],
+                content: [
+                    "<ul><li><b>1. Aging people have a better technology adaptability than stereotype</b></li>" +
+                        "<li><b>2. The amount of social connections didn’t change</b></li>" +
+                        "<li><b>3. Sharing stories behind photos to friends is a crucial daily activity</b></li>" +
+                        "<li><b>4. The ToY message is expected to deliver more information</b></li>" +
+                        "<li><b>5. ToY seems as an alternative communication tool contacting family without disturbance</b></li>" +
+                        "<li><b>6. Their children update new photos regularly</b></li>" +
+                        "<li><b>7. Simplify interaction with deliberation</b></li></ul>",
+                        "<a href='https://c1.staticflickr.com/3/2948/34049212976_4acf833a9b_o.jpg' target='blank'><span class='reference'><b class='secondary'>Full size poster</b></span></a>"
+                ]
+            },
+            {
+                sectionTitle: "Prototyping",
+                is: {
+                    imageWithText: true,
+                },
+                subtitle: "",
+                images: [
+                    {
+                        src: "https://github.com/leglars/portfolio/blob/master/src/statics/images/toy/display.gif?raw=true",
+                        alt: "Display",
+                    },
+                    {
+                        src: "https://github.com/leglars/portfolio/blob/master/src/statics/images/toy/photoview.gif?raw=true",
+                        alt: "Photo view",
+                    },
+                    {
+                        src: "https://github.com/leglars/portfolio/blob/master/src/statics/images/toy/message.gif?raw=true",
+                        alt: "message",
+                    },
+                    {
+                        src: "https://c1.staticflickr.com/3/2930/33961307271_2e20d3cf0d_c.jpg",
+                        alt: "Photo view snapshot",
+                    },
+                    {
+                        src: "https://c1.staticflickr.com/3/2926/33961300961_d8731d9d2c_c.jpg",
+                        alt: "Enhanced message",
+                    },
+                    {
+                        src: "https://c1.staticflickr.com/3/2904/33961308371_778763b6c3_c.jpg",
+                        alt: "Photo uploader",
+                    },
+                    {
+                        src: "https://c1.staticflickr.com/3/2923/33961314761_74bc371481_c.jpg",
+                        alt: "Notification",
+                    }
+                        ],
+                content: [
+                    "So far, I have achieved some potential ideas from the findings for the subsequent design iteration and transfer these ideas into detailed solutions and features, then integrate them into TOY. However, the limited user number confines my ability to make convincing design decisions which is the most engaging feature for users. To address this defect, I Justifying user demand level for each idea in the <a href='portfolio/src/statics/file/Thesis_Final.pdf'><span class='reference'>Thesis Report</span></a> based on what I found from evaluation and literatures."
                 ]
             },
 
@@ -183,13 +288,13 @@ const projects = [
                 subtitle: "An affordable premium speech training service",
                 heroImages: [
                     {
-                        src: 'https://github.com/leglars/portfolio/blob/master/src/statics/images/we/whisper_effect_title_hero_1.jpg?raw=true',
-                        alt: 'we exhibition',
+                        src: 'https://c1.staticflickr.com/3/2811/33682545960_c7e761fe8f.jpg',
+                        alt: 'XueDaoJi Logo',
                         key: 1,
                     },
                     {
-                        src: 'https://github.com/leglars/portfolio/blob/master/src/statics/images/we/whisper_effect_title_hero_2.jpg?raw=true',
-                        alt: 'we exhibition',
+                        src: 'https://c1.staticflickr.com/4/3941/33255653193_1d519dc8b3_m.jpg',
+                        alt: 'Speech Test',
                         key: 2,
                     }
                 ],
@@ -239,15 +344,13 @@ const projects = [
                 content: [
                     {
                         key: 1,
-                        image: {
-                            src: "",
-                            alt: ""
-                        },
+                        image: false,
                         text: [
-                        "The traditional language training is low-efficiency because there are many dispensable processes. However, 1-to-1 or small group teaching, which are considered as the best way to improve test performance, is cost. Furthermore, even some teachers admit that listening and speech courses have limited effect for students. Here, use a typical 1-to-1 speaking course as an example.",
+                        "<h3 class='startLine'>Where is problem?</h3>",
+                        "The traditional language training is low-efficiency because of too many dispensable processes. However, 1-to-1 or small group teaching, which are considered as the best way to improve grade, is cost. Furthermore, teaching has less effect for students than hard practice. Here, use a typical 1-to-1 speaking course as an example.",
 
-                        "<ul><li>1. Teacher gives a topic, and student speaks out his answer after a short time, which simulate the real testing environment</li>" +
-                        "<li>2. Critiques student's response and analyzes the problem in it</li>"+
+                        "<ul><li>1. Teacher gives a topic; student responses like testing context</li>" +
+                        "<li>2. Critiques response and analyzes issues</li>"+
                         "<li>3. Review and analyze the topic</li>" +
                         "<li>4. Help student to organize a sample answer and present other related phrase or sentence</li>" +
                         "<li>5. Student practices</li>" +
@@ -255,13 +358,15 @@ const projects = [
                         "<li>7. Iterate</li>" +
                         "<li>8. Arrange assignment based on student situation</li></ul>",
 
-                        "In fact, step 2 – 4 and 8 are the essential parts in a teaching event. The rest can be done by students themselves in private; however, it takes up almost 50% course time which means half tuition expense - around $50 per hour.",
+                        "In fact, Effective guidance, step 2, 3, 4, and 8, are the essence of teaching; and Self-practice is the core of learning. however, teaching just takes up half of course time which means resultless expense is also half - around $50 per hour.",
 
-                        "Therefore, why we can't extract the essential parts and package as a service?",
-
+                        "<b>Why we can't extract the essential parts and package as a service?</b>",
+                        "<h3>Find a starting point</h3>",
                         "Q1 & Q2 are considered the hardest sections in the TOEFL Speaking Test because of the particular testing form which has no preparing time for the testers. It requires a tester has a great speaking capacity. The best way to improve the performance in the examination is to do practice every day with teacher's guide.",
 
                         "Short voice message, which is not longer than 60 second, is one of the core features of WeChat. Some training agencies ask their students to submit 45s speech every day as the assignment. And teachers critique these submissions.",
+
+                        "Based on above thought, the primary idea of this product has come out <br/> <b class='secondary'>-- A Speech Testing Practice Service by WeChat mini program framework.</b>"
                         ]
                     }
                 ]
@@ -290,8 +395,9 @@ const projects = [
                     },
                 ],
                 content: [
-                    "XueDaoJi is an English educational agency located in Hefei, China. It provides superior academic English test training service - SAT, AP, TOEFL and IELTS.",
-                    "XueDaoJi - Speech Practice is a mobile app based on WeChat mini program framework. Through it, I desire to provide an professional online English speech practice service for Chinese English language test examinee, TOEFLr and IELTSer, with an affordable price. Besides, applying mini program framework, this app can offer a ready-access-upon-use experience that a user can open the app at any time without any installation."
+                    "The first timeline diagram briefly illustrates how clients (users and teachers) interact with the system in a time sequence.  It also simply displays the high-level system structure.",
+
+                    "The rest three diagram tells the potential journeys from different views of users and teachers respectively. It gives an outline of the future design(UX, UI) and development."
                 ]
             },
             {
@@ -318,22 +424,30 @@ const projects = [
                     },
                 ],
                 content: [
-                    "XueDaoJi is an English educational agency located in Hefei, China. It provides superior academic English test training service - SAT, AP, TOEFL and IELTS."
+                    "According to the user journey, in the first stage of this project, I designed the main pages' UI of the mini-program-end app. It strictly follows the <a href='https://mp.weixin.qq.com/debug/wxadoc/design/index.html?t=2017119' target='_blank'><span class='reference'>WeChat UI guideline</span></a>. It is a robust UI system which has been deployed on WeChat, a billion level product, in many years. Before achieving plenty of usage data of target users, I believe it is a good choice for startup stage."
                 ]
             },
             {
                 sectionTitle: "Prototyping",
-                is: { imageWithText: true },
+                is: {
+                    imageWithText: true,
+                    singleImage: true
+                },
                 title: "Prototyping",
                 subtitle: "Interaction Sequence & User Journey",
                 images: [
                     {
                         src: "https://github.com/leglars/portfolio/blob/master/src/statics/images/xdj/ezgif.com-resize.gif?raw=true",
-                        alt: "Interaction Prototyping"
+                        alt: "Interaction Prototyping",
+                        size: {
+                            height: 480,
+                            width: 270
+                        }
                     }
                 ],
                 content: [
-                    "XueDaoJi is an English educational agency located in Hefei, China. It provides superior academic English test training service - SAT, AP, TOEFL and IELTS."
+                    "Due to Sketch can't create interactive prototype directly, I applied Flinto to make the prototype. Since Flinto has Sketch plugin which can bridge the communication between two tools, I can quickly adapt the workflow - updating the interface in Sketch and managing the interaction logic between pages in Flinto. ",
+                    "The left Gif presents the main operation in mini-program-end."
                 ]
             },
 
@@ -373,7 +487,7 @@ const projects = [
             },
             {
                 sectionTitle: "Problem Space",
-                is: {},
+                is: {columns: true},
                 subtitle: "Laurence - Everyday Whisper",
                 content: [
                     "Journalism and media are biased. Research found that the perception of bias is both subjective and relativistic (D’Alessio, 2003). Due to the mass volume of media available, people become tired of judging the accuracy, news-relevance and bias of the article they read. This causes readers to develop a preference for specific news providers and ignore other worthy news sources, even lose perception and awareness of bias in the media.",
