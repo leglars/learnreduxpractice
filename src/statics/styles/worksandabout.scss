@@ -1,6 +1,6 @@
 @import "./base/variables";
 
-.works {
+.works, .about {
   margin: 0 auto;
   padding-top: 32px;
   width: auto;
@@ -17,8 +17,6 @@
     font-size: 144px;
     color: #d3d3d3;
     position: absolute;
-    top: 212px;
-    left: -132px;
     z-index: 0;
     &:after {
       content: "";
@@ -26,8 +24,32 @@
       clear: both;
     }
   }
+  .navToAbout, .navToWork {
+    position: absolute;
+    bottom: 12px;
+    background-color: white;
+    a {
+      height: auto;
+      color: #8f8f8f;
+      transition: color 100ms ease-in-out;
+      &:hover {
+        color: darken(#8F8F8F, 20%)
+      }
+      .linkText {
+        font-size: 36px;
+        vertical-align: middle;
+        top: 0;
+      }
+    }
+  }
+}
 
-  .projects{
+.works {
+  .title {
+    top: 210px;
+    left: -132px;
+  }
+  .projects {
     margin-top: 100px - 32px;
     margin-left: 164px;
     z-index: 9;
@@ -48,7 +70,7 @@
             margin-bottom: 0;
           }
 
-          a{
+          a {
             color: #8F8F8F;
             font-size: 48px;
             line-height: 48px;
@@ -62,29 +84,19 @@
           display: none;
         }
       }
-      }
-    }
-
-  .navToAbout {
-    position: absolute;
-    bottom: 12px;
-    background-color: white;
-    a {
-      height: auto;
-      color: #8f8f8f;
-      transition: color 100ms ease-in-out;
-      &:hover {
-        color: darken(#8F8F8F, 20%)
-      }
-      .linkText {
-        font-size: 36px;
-        vertical-align: middle;
-        top: 0;
-      }
     }
   }
+}
 
+.about {
+  .title {
+    top: 150px;
+    left: -72px;
   }
+  .navToWork {
+    right: 0;
+  }
+}
 
 @media (#{$bp-larger-than-desktophd}) {
   .works {
@@ -103,19 +115,6 @@
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 //.projectsdisplay-wrap a img {
 //  width: 100%;
 //  height: auto;
@@ -127,10 +126,9 @@
 //  margin-left: 0;
 //}
 
-
-  // .three control the new line block
-  // less 1200 (bp-larger-than-desktophd) is 3 columns    .three.columns control
-  // new line is 2n+1
+// .three control the new line block
+// less 1200 (bp-larger-than-desktophd) is 3 columns    .three.columns control
+// new line is 2n+1
 //@media (#{$bp-larger-than-phablet}) {
 //
 //  .projectsdisplay-wrap .three {

@@ -2,9 +2,11 @@
  * Created by leglars on 2017/3/10.
  */
 import React from 'react';
+import { Switch, Route } from 'react-router-dom';
 
 import Footer from './Footer';
 import Works from './Works';
+import AboutMe from './AboutMe';
 
 
 import '../statics/styles/index.css';
@@ -47,7 +49,7 @@ const Index = React.createClass({
             <div>
                 <div className="container">
                     <div className="wrap" style={style}>
-                        {/*TODO: add a new filter*/}
+                        {/*TODO: add filter*/}
                         {/*<div className="nav">*/}
                             {/*<ul>*/}
                                 {/*<NavLink to="/project" activeClassName="active"><li>Projects</li></NavLink>*/}
@@ -55,8 +57,15 @@ const Index = React.createClass({
                                 {/*<NavLink to="/concept" activeClassName="active"><li>Concepts</li></NavLink>*/}
                             {/*</ul>*/}
                         {/*</div>*/}
-
-                        <Works minHeight={this.state.height} {...this.props}/>
+                        <Switch>
+                            <Route exact path="/" render={()=>
+                                <AboutMe {...this.props}/>}
+                            />
+                            <Route path="/projects" render={() =>
+                                <Works minHeight={this.state.height}
+                                       {...this.props}/>}
+                            />
+                        </Switch>
                     </div>
                 </div>
                 <Footer/>

@@ -194,8 +194,8 @@ const projects = [
                 ],
                 content: [
                 "We found <a href='https://au.pinterest.com/pin/433964114069452451/'><span class='reference'> a tutorial on Pinterest.</span></a> It taught us how to make a cardboard truck. We took serval weeks to build our tree step by step.",
-'I took apart three speakers and took out their amplifier unit to drive the transducer. The sensor was put on the top of tree hole so that the forehead of audience can against on it when they "talk to treehole". Under the tree hole, there is a distance sensor, so the program knows whether a user is approaching.',
-"Due to the installation is a tree, I preferred no physical interaction method, like buttons and screen. As a result, I proposed using light to give user feedback, which was inspired by glow worm. Then, we conducted a body storming to stimulate the interaction process and summarized seven different light patterns covering all system status."
+            'I took apart three speakers and took out their amplifier unit to drive the transducer. The sensor was put on the top of tree hole so that the forehead of audience can against on it when they "talk to treehole". Under the tree hole, there is a distance sensor, so the program knows whether a user is approaching.',
+            "Due to the installation is a tree, I preferred no physical interaction method, like buttons and screen. As a result, I proposed using light to give user feedback, which was inspired by glow worm. Then, we conducted a body storming to stimulate the interaction process and summarized seven different light patterns covering all system status."
                 ]
             },
             {
@@ -616,80 +616,8 @@ const projects = [
 
         ],
     },
-    {
+        {
         projectId: "4",
-        title: "In The Know",
-        projectURL: "intheknow",
-        styleId: "itk",
-        subtitle: "Use your body to listen in the world",
-        titleImage:{
-                src: "https://c1.staticflickr.com/3/2843/33974491825_670774c923.jpg",
-                alt: "placeholder",
-            },
-        sections: [
-            {
-                sectionTitle: "Introduction",
-                is: {titlePage: true},
-                title: "In The Know",
-                subtitle: "aaaaaaaaa",
-                heroImages: [
-                    {
-                        src: 'https://github.com/leglars/portfolio/blob/master/src/statics/images/we/whisper_effect_title_hero_1.jpg?raw=true',
-                        alt: 'we exhibition',
-                        key: 1,
-                    },
-                    {
-                        src: 'https://github.com/leglars/portfolio/blob/master/src/statics/images/we/whisper_effect_title_hero_2.jpg?raw=true',
-                        alt: 'we exhibition',
-                        key: 2,
-                    }
-                ],
-                content: [
-                    "In the Know is a web-based application attempting to diminish the media bias. It brings different published news articles from multiple media organisations together, thus allowing the public to consume the news related with the same issue from different angles.",
-                ],
-            },
-            {
-                sectionTitle: "Problem Space",
-                is: {columns: true},
-                subtitle: "Laurence - Everyday Whisper",
-                content: [
-                    "Journalism and media are biased. Research found that the perception of bias is both subjective and relativistic (D’Alessio, 2003). Due to the mass volume of media available, people become tired of judging the accuracy, news-relevance and bias of the article they read. This causes readers to develop a preference for specific news providers and ignore other worthy news sources, even lose perception and awareness of bias in the media.",
-
-                    "Bias is sometimes unavoidable, but it can be minimised if every reader had the chance to view and compare a story over time, from a range of viable sources. Based on this mind, In The Know wishes to provide people a platform where they can make an informed decision of whether a news provider may show signs of bias and make their own justified judgments.",
-
-                    "With the increasing number of digital news incorporating a user feedback system, it is important to “understand how people process and integrate technology-mediated messages from unknown others to make sense of their social world” (Lee, 2012). Therefore, In the Know also offers an anonymous free-to-comment atmosphere through Danmaku (flying comment) system."
-                ]
-            }
-
-        ]
-    },
-    {
-        projectId: "5",
-        title: "Live & Memory",
-        projectURL: "live",
-        subtitle: "Use your body to listen in the world",
-        titleImage:{
-                src: "https://c1.staticflickr.com/3/2843/33974491825_670774c923.jpg",
-                alt: "placeholder",
-            },
-        sections: [
-            {
-                sectionTitle: "introduction",
-                subtitle: "",
-                is: {},
-                content: "In this title, we apply bone conduction technology to change the way of listening and embed this innovative experience into a folktale - Don’t tell your secret to a tree hole. To deliver an intuitive experience, we consider the relationship between materials, metaphors, and behaviors",
-            },
-            {
-                sectionTitle: "inspire",
-                is: {},
-                subtitle: "Laurence - Everyday Whisper",
-                content: "Swift the daily idea can bring us into a brand-new world."
-            }
-
-        ]
-    },
-    {
-        projectId: "6",
         title: "Web Design",
         projectURL: "wdc",
         subtitle: "Some web design works in last two years",
@@ -834,8 +762,104 @@ const projects = [
         ]
     },
     {
+        projectId: "5",
+        title: "In The Know",
+        projectURL: "intheknow",
+        styleId: "itk",
+        subtitle: "Use your body to listen in the world",
+        titleImage:{
+                src: "https://c1.staticflickr.com/3/2843/33974491825_670774c923.jpg",
+                alt: "placeholder",
+            },
+        sections: [
+            {
+                sectionTitle: "Introduction",
+                is: {titlePage: true},
+                title: "In The Know",
+                subtitle: "aaaaaaaaa",
+                heroImages: [
+                    {
+                        src: 'https://github.com/leglars/portfolio/blob/master/src/statics/images/we/whisper_effect_title_hero_1.jpg?raw=true',
+                        alt: 'we exhibition',
+                        key: 1,
+                    },
+                    {
+                        src: 'https://github.com/leglars/portfolio/blob/master/src/statics/images/we/whisper_effect_title_hero_2.jpg?raw=true',
+                        alt: 'we exhibition',
+                        key: 2,
+                    }
+                ],
+                content: [
+                    "In the Know is a web-based application attempting to diminish the media bias. It brings different published news articles from multiple media organisations together, thus allowing the public to consume the news related with the same issue from different angles.",
+                ],
+            },
+            {
+                sectionTitle: "Problem Space",
+                is: {columns: true},
+                subtitle: "Laurence - Everyday Whisper",
+                content: [
+                    "Journalism and media are biased. Research found that the perception of bias is both subjective and relativistic (D’Alessio, 2003). Due to the mass volume of media available, people become tired of judging the accuracy, news-relevance and bias of the article they read. This causes readers to develop a preference for specific news providers and ignore other worthy news sources, even lose perception and awareness of bias in the media.",
+
+                    "Bias is sometimes unavoidable, but it can be minimised if every reader had the chance to view and compare a story over time, from a range of viable sources. Based on this mind, In The Know wishes to provide people a platform where they can make an informed decision of whether a news provider may show signs of bias and make their own justified judgments.",
+
+                    "With the increasing number of digital news incorporating a user feedback system, it is important to “understand how people process and integrate technology-mediated messages from unknown others to make sense of their social world” (Lee, 2012). Therefore, In the Know also offers an anonymous free-to-comment atmosphere through Danmaku (flying comment) system."
+                ]
+            }
+
+        ]
+    },
+    {
+        projectId: "6",
+        title: "Live & Memory",
+        projectURL: "live",
+        subtitle: "Use your body to listen in the world",
+        titleImage:{
+                src: "https://c1.staticflickr.com/3/2843/33974491825_670774c923.jpg",
+                alt: "placeholder",
+            },
+        sections: [
+            {
+                sectionTitle: "introduction",
+                subtitle: "",
+                is: {},
+                content: "In this title, we apply bone conduction technology to change the way of listening and embed this innovative experience into a folktale - Don’t tell your secret to a tree hole. To deliver an intuitive experience, we consider the relationship between materials, metaphors, and behaviors",
+            },
+            {
+                sectionTitle: "inspire",
+                is: {},
+                subtitle: "Laurence - Everyday Whisper",
+                content: "Swift the daily idea can bring us into a brand-new world."
+            }
+
+        ]
+    },
+    {
         projectId: "7",
         title: "City Talk",
+        projectURL: "citytalk",
+        subtitle: "Use your body to listen in the world",
+        titleImage:{
+                src: "https://c1.staticflickr.com/3/2843/33974491825_670774c923.jpg",
+                alt: "placeholder",
+            },
+        sections: [
+            {
+                sectionTitle: "introduction",
+                subtitle: "",
+                is: {},
+                content: "In this title, we apply bone conduction technology to change the way of listening and embed this innovative experience into a folktale - Don’t tell your secret to a tree hole. To deliver an intuitive experience, we consider the relationship between materials, metaphors, and behaviors",
+            },
+            {
+                sectionTitle: "inspire",
+                subtitle: "Laurence - Everyday Whisper",
+                content: "Swift the daily idea can bring us into a brand-new world."
+            }
+
+        ]
+    },
+    {
+        projectId: "8",
+        title: "Ideas Collection",
         projectURL: "citytalk",
         subtitle: "Use your body to listen in the world",
         titleImage:{

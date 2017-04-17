@@ -6,7 +6,7 @@ import {Link} from 'react-router-dom';
 
 import MdChevronLeft from 'react-icons/lib/md/chevron-left';
 
-import '../statics/styles/works.css'
+import '../statics/styles/worksandabout.css'
 
 
 const Works = React.createClass({
@@ -18,10 +18,10 @@ const Works = React.createClass({
         const total = projects.length;
         let half;
 
-        if (total < 9) {
+        if (total < 8) {
             half = 4
         } else {
-            half = total / 2;
+            half = Math.floor(total / 2) + 1;
         }
 
         const style = {
@@ -66,9 +66,9 @@ const Works = React.createClass({
                     </div>
                 </div>
                 <div className="navToAbout">
-                    <Link to="#">
+                    <Link to="/">
                         <div className="bottomChevron clear">
-                            <MdChevronLeft size={64} />
+                            <MdChevronLeft size={64}/>
                         </div>
                         <div className="linkText">About</div>
                     </Link>
