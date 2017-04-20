@@ -57,15 +57,17 @@ const Index = React.createClass({
                                 {/*<NavLink to="/concept" activeClassName="active"><li>Concepts</li></NavLink>*/}
                             {/*</ul>*/}
                         {/*</div>*/}
-                        <Switch>
-                            <Route exact path="/" render={()=>
-                                <AboutMe {...this.props}/>}
-                            />
-                            <Route path="/projects" render={() =>
-                                <Works minHeight={this.state.height}
-                                       {...this.props}/>}
-                            />
-                        </Switch>
+                        {/*<Switch>*/}
+                            {/*<Route exact path="/" render={()=>*/}
+                                {/*<AboutMe {...this.props}/>}*/}
+                            {/*/>*/}
+                            {/*<Route path="/projects" render={() =>*/}
+                                {/*<Works minHeight={this.state.height}*/}
+                                       {/*{...this.props}/>}*/}
+                            {/*/>*/}
+                        {/*</Switch>*/}
+                        <Works minHeight={this.state.height}
+                               {...this.props}/>
                     </div>
                 </div>
                 <Footer/>

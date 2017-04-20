@@ -65,14 +65,14 @@ const Works = React.createClass({
                         </ul>
                     </div>
                 </div>
-                <div className="navToAbout">
-                    <Link to="/">
-                        <div className="bottomChevron clear">
-                            <MdChevronLeft size={64}/>
-                        </div>
-                        <div className="linkText">About</div>
-                    </Link>
-                </div>
+                {/*<div className="navToAbout">*/}
+                    {/*<Link to="/">*/}
+                        {/*<div className="bottomChevron clear">*/}
+                            {/*<MdChevronLeft size={64}/>*/}
+                        {/*</div>*/}
+                        {/*<div className="linkText">About</div>*/}
+                    {/*</Link>*/}
+                {/*</div>*/}
             </div>
         )
     }

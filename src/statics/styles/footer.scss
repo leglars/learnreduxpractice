@@ -29,7 +29,8 @@
         a {
           color: #636363;
           &:hover {
-            color: $primary-color;
+            color: darken(#636363, 20%);
+            //color: $primary-color;
             transition: all 100ms linear;
           }
         }

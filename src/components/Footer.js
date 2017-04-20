@@ -26,10 +26,10 @@ const Footer = React.createClass({
                     <div className="right">
                         <div className="social-media">
                             <ul>
-                                <li className="icon"><a href="#"><FaLinkedinSquare size={32}/></a></li>
-                                <li className="icon"><a href="#"><MdEmail size={32}/></a></li>
-                                <li className="icon"><a href="#"><FaGithub size={32}/></a></li>
-                                <li className="icon"><a href="#"><FaFlickr size={32}/></a></li>
+                                <li className="icon"><a href="https://www.linkedin.com/in/nicholaszheng/"><FaLinkedinSquare size={32}/></a></li>
+                                <li className="icon"><a href="mailto:leglars@gmail.com"><MdEmail size={32}/></a></li>
+                                <li className="icon"><a href="https://github.com/leglars"><FaGithub size={32}/></a></li>
+                                <li className="icon"><a href="https://www.flickr.com/photos/leglars/"><FaFlickr size={32}/></a></li>
                             </ul>
                         </div>
                         <div className="copyright">
