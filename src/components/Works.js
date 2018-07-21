@@ -11,15 +11,25 @@ import '../statics/styles/worksandabout.css'
 
 const Works = React.createClass({
 
+    foo: function () {
+        return 5
+    },
+
     render: function () {
         const {data, minHeight} = this.props;
         const {projects} = data;
+        let my = this.foo();
+        console.log("++++++++++++++++++");
+        console.log(my);
 
         const total = projects.length;
         let half;
 
         if (total < 8) {
-            half = 4
+            half = 4;
+            if (total === 5) {
+                half = 3
+            }
         } else {
             half = Math.floor(total / 2) + 1;
         }

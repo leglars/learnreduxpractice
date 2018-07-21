@@ -859,25 +859,161 @@ const projects = [
     },
     {
         projectId: "8",
-        title: "Ideas Collection",
-        projectURL: "citytalk",
-        subtitle: "Use your body to listen in the world",
+        title: "Graphic Design",
+        projectURL: "graphic-design",
+        styleId: "gdc",
+        subtitle: "",
         titleImage:{
                 src: "https://c1.staticflickr.com/3/2843/33974491825_670774c923.jpg",
                 alt: "placeholder",
             },
         sections: [
             {
-                sectionTitle: "introduction",
+                sectionTitle: "Introduction",
+                is: {titlePage: true,},
+                title: "Graphic Design Collection",
                 subtitle: "",
-                is: {},
-                content: "In this title, we apply bone conduction technology to change the way of listening and embed this innovative experience into a folktale - Don’t tell your secret to a tree hole. To deliver an intuitive experience, we consider the relationship between materials, metaphors, and behaviors",
+                keyword: ["Adobe Creative Suite", "Graphic Design", "Typography", "VI"],
+                heroImages: [
+                    {
+                        src: 'https://c1.staticflickr.com/5/4282/35028172631_4b08c10932.jpg',
+                        alt: 'snapshot of masterpiece',
+                        key: 1,
+                    },
+                    {
+                        src: 'https://c1.staticflickr.com/5/4264/34772306780_af88345b00.jpg',
+                        alt: 'Snapshot of Miaoqu',
+                        key: 2,
+                    }
+                ],
+                content: [
+                "This collection contains some representative graphic works. Most of them came from my college era when I immersed in starting up a social entrepreneur group (SIFE) on the campus and working on several projects. They recorded my growth on graphic design. After I had come to Australia, I put myself into the exploration in UX and interaction design and had less effort on creating posters.",
+                "Of Course, graphic design is not equal to make a beautiful poster. The collection includes magazine & newspaper typography, posters, presentation materials for competitions and other related works. These all present my understanding and capability on graphic design."
+                ],
+
             },
             {
-                sectionTitle: "inspire",
-                subtitle: "Laurence - Everyday Whisper",
-                content: "Swift the daily idea can bring us into a brand-new world."
-            }
+                is: {imageWithText: true},
+                sectionTitle: "Magazine & Newspaper",
+                subtitle: "Typography with InDesign",
+                images: [
+                    {
+                        src: "https://c1.staticflickr.com/5/4191/33866986383_3a2ba37dd8_c.jpg",
+                        alt: "Elites in Brisbane"
+                    },
+                    {
+                        src: "https://c1.staticflickr.com/5/4156/33866993083_2f01831f43_b.jpg",
+                        alt: "Tiandi sample 1"
+                    },
+                    {
+                        src: "https://c1.staticflickr.com/5/4191/33834409784_433f2913e2_b.jpg",
+                        alt: "Tiandi sample 2"
+                    },
+                    {
+                        src: "https://c1.staticflickr.com/5/4185/33834415834_6390d0cfaf_b.jpg",
+                        alt: "Tiandi Sample 3"
+                    },
+                ],
+                content: [
+                "Newspaper typography is my start-point of graphic design. I was an editor working for school journal. In a B&W world, I knew that the combination of basic visual elements, such as space, font, gray, segment line, shadow, position, and density, is so powerful. I realized the enjoyment in design and started to learning around this area.",
+                ]
+            },
+            {
+                is: {imageWithText: true},
+                sectionTitle: "Posters",
+                subtitle: "",
+                images: [
+                	{
+                        src: "https://c1.staticflickr.com/5/4159/34547220571_02703d45e1_k.jpg",
+                        alt: "MasterPiece"
+                    },
+                    {
+                        src: "https://c1.staticflickr.com/5/4159/34546923911_66c5a1bb90_c.jpg",
+                        alt: "Recruiting"
+                    },
+                    {
+                        src: "https://c1.staticflickr.com/5/4164/34636565456_15a1d9c4f9_b.jpg",
+                        alt: "Google Competition Presentation"
+                    },
+                    {
+                        src: "https://c1.staticflickr.com/5/4165/34546900011_600d86702d_h.jpg",
+                        alt: "Enjoying Childhood"
+                    },
+                    {
+                        src: "https://c1.staticflickr.com/5/4180/34546902241_98e55bdcc5_b.jpg",
+                        alt: "Alumni Meeting"
+                    },
+                    {
+                        src: "https://c1.staticflickr.com/5/4178/34636578396_1d5b80b8df_c.jpg",
+                        alt: "StoryMaker"
+                    },
+                    {
+                        src: "https://c1.staticflickr.com/3/2948/34049212976_4138027cba_c.jpg",
+                        alt: "Thinking of You"
+                    },
+                    
+
+                ],
+                content: [
+                'Posters always serve certain goals: showing an attitude, delivering an idea, telling a story and enhancing an atmosphere. It is the mindset when I make a poster. Then some Easter eggs may give people who catch the point a chuckle.'
+                ]
+            },
+            {
+                is: {imageWithText: true},
+                sectionTitle: "Presentation Design",
+                subtitle: "Competition Presentation Material",
+                images: [
+                    {
+                        src: "https://c1.staticflickr.com/5/4170/33834698604_1b572eac70_c.jpg",
+                        alt: "KungShiFu Competition"
+                    },
+                    {
+                        src: "https://c1.staticflickr.com/5/4177/34636344076_383ba7b86a_k.jpg",
+                        alt: "Enactus National Competition"
+                    }
+                ],
+                content: [
+                'These works helped my teams to achieve three national-level competitions. Before I started to make a presentation material, I would read the script first and highlight points we desire to present to judges. I attempt to assist audiences getting an overview of presenting content in shortest time. Then, give it a stunning style which should contribute to not just displaying information, but also reflecting the brand.'
+                ]
+            },
+            {
+                is: {imageWithText: true},
+                sectionTitle: "Other Works",
+                subtitle: "",
+                images: [
+                    {
+                        src: "https://c1.staticflickr.com/5/4173/34700235555_3b84d76c81_h.jpg",
+                        alt: "Logos"
+                    },
+                    {
+                        src: "https://c1.staticflickr.com/5/4185/34659808916_d100a6179e_b.jpg",
+                        alt: "Thank-you Card"
+                    },
+                    {
+                        src: "https://c1.staticflickr.com/5/4155/34312537280_5b45f4f98e_b.jpg",
+                        alt: "Business Card & Name Card"
+                    },
+                    {
+                        src: "https://c1.staticflickr.com/5/4161/34312372990_d6d467611d_c.jpg",
+                        alt: "T-shirt"
+                    },
+                    {
+                        src: "https://c1.staticflickr.com/5/4159/34312353720_248b7bee0f_c.jpg",
+                        alt: "Brasket Icon"
+                    },
+                    {
+                        src: "https://c1.staticflickr.com/5/4166/34656498236_c4a9b98d73_c.jpg",
+                        alt: "Clip & Band"
+                    },
+                    {
+                        src: "https://c1.staticflickr.com/5/4194/33857994674_7660edb852_k.jpg",
+                        alt: "Postcards"
+                    },
+                ],
+                content: [
+                'This page contains a wide range of works from logos, thank-you card, to T-shirt and postcard, gathered from different projects. Each of them demonstrates my inspiration and trial at that time.'
+                ]
+            },
 
         ]
     },
